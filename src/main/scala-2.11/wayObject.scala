@@ -4,13 +4,13 @@
 
 object wayObject {
 
-  def apply(idWay:String, highway:String, nameWay:String, oneWay:String, nodeList:List[String] ) : _wayObject =
-  _wayObject (idWay, highway, nameWay, oneWay , nodeList)
+  def apply(idWay:String, nameWay:String, highway:String, oneWay:String, nodeList:List[String] ) : _wayObject =
+  _wayObject (idWay, nameWay, highway, oneWay , nodeList)
 
 }
 case class _wayObject(   idWay:String,
-                       highway:String,
-                       nameWay:String,
+                         nameWay:String,
+                         highway:String,
                         oneWay: String,
                       nodeList:List[String]
                   )

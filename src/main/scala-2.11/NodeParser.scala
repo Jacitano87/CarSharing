@@ -1,11 +1,10 @@
-import io.plasmap.model.{OsmId, OsmObject, OsmTag}
+import io.plasmap.model.OsmObject
 
 /**
   * Created by AntonioFischetti on 12/05/16.
   */
 class NodeParser() {
 
-  val listNodes = scala.collection.mutable.MutableList[Node]()
 
   def _isNode(element: Option[OsmObject]): Boolean = {
     element.fold(false)(el => {
@@ -13,25 +12,23 @@ class NodeParser() {
     })
   }
 
-  def _a(elementOption: Option[OsmObject]): Unit = {
-    elementOption.fold(println("no parse")) {
+  def getNodeParsed(elementOption: Option[OsmObject]): (String,String,String) = {
+
+    elementOption.fold("","","") {
       element =>
-        if (element.isNode)
-          element.nodeOption.fold(println("Non funge")) {
+          element.nodeOption.fold("","","") {
             node => {
-              listNodes += Node(element.id, node.point.lat, node.point.lon, element.tags)
-              println("Nodo" + Node(element.id, node.point.lat, node.point.lon, element.tags))
+             if(node.tags.length == 0) {
+               (element.id.toString(), node.point.lat.toString(), node.point.lon.toString())
+             }
+              //println("idNodo: " + element.id + " latNodo: " + node.point.lat + " lonNodo: " + node.point.lon)
             }
 
           }
+
     }
   }
 
 
-  case class Node(id: OsmId,
-                  lat: Double,
-                  lon: Double,
-                  tags: List[OsmTag]
-                 )
 
 }

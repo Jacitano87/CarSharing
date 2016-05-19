@@ -22,21 +22,39 @@ object Graph_x {
     val parser = OsmParser("/Users/AntonioFischetti/desktop/Acireale.osm")
     val parser2 = OsmParser("/Users/AntonioFischetti/desktop/Acireale.osm")
 
+    val _listWay = scala.collection.mutable.MutableList[_wayObject]()
+    val _listNodeTemp = scala.collection.mutable.MutableList[_nodeObject]()
+    val _listNodeFinal = scala.collection.mutable.MutableList[_nodeObject]()
+
     val way = new WayParser()
-    //val node = new NodeParser()
+    val node = new NodeParser()
+
+    println("Start Parsing data...")
 
     // Way get Primary - Secondary - Tertiary - Residential - Unclassified - Road - Living Street
     parser.foreach(elementOption => {
       if (way._isWay(elementOption)) {
         if (way._isHighway(elementOption)) {
-         //println("El: " + way.getWayParsered(elementOption))
-          var _way = way.getWayParsered(elementOption)
-          var obj = wayObject(_way._1,_way._2,_way._3,_way._4,_way._5)
+            val _way = way.getWayParsed(elementOption)
+            val _objWay = wayObject(_way._1,_way._2,_way._3,_way._4,_way._5)
+
+            _listWay.+=(_objWay)
+
         }
-      }
+      } /** Close isWay**/
+
+      if(node._isNode(elementOption)){
+        val _node = node.getNodeParsed(elementOption)
+        val _objNode = nodeObject(_node._1,_node._2,_node._3)
+        _listNodeTemp.+=(_objNode)
+      } /** Close isNode**/
     }
-    )
-  }
+    ) /** Close ForeachParser**/
+
+    println("Finish Parsing data...")
+
+
+  } // Close Main
 }
     /**
       * parser2.foreach(elementOption => {
@@ -48,7 +66,7 @@ object Graph_x {
       * )
       * }
       * }
-      **/
+    **/
 
 //case class Way(id:OsmId,lat:Double,long:Double)
 

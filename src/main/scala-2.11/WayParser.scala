@@ -1,5 +1,6 @@
 import io.plasmap.model.OsmObject
 
+
 /**
   * Created by AntonioFischetti on 12/05/16.
   */
@@ -37,14 +38,15 @@ class WayParser() {
   }
 
 
-def getWayParsered(element:Option[OsmObject]) : (String,String,String,String,List[String]) = {
+def getWayParsed(element:Option[OsmObject]) : (String,String,String,String,List[String]) = {
 
   val _listNodes = scala.collection.mutable.MutableList[String]()
-  //var _listNodes = scala.collection.mutable.MutableList[String]()
   var _id = ""
   var _nameWay = ""
   var _highway = ""
   var _oneWay = "no"
+
+
 
   element.fold((_id,_nameWay,_highway,_oneWay,_listNodes.toList)){
       element2 => {
@@ -55,7 +57,6 @@ def getWayParsered(element:Option[OsmObject]) : (String,String,String,String,Lis
 
             element3.nds.foreach(
                 nodi => {
-
                   _listNodes.+=(nodi.value.toString())
                 }
 

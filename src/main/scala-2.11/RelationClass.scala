@@ -11,9 +11,21 @@ class RelationClass {
     })
   }
 
-  def getRelationParsed(elementOption: Option[OsmObject]): (String,String,String) = {
+  def getRelationParsed(elementOption: Option[OsmObject]): Unit = {
 
-    elementOption.fold("","","")
+    elementOption.fold() {
+       element => {
+
+         element.tags.headOption.fold() {
+           tag =>{
+             //println("Tag: " +tag.key)
+
+         }
+
+
+         }
+       }
+    }
 
   }
 

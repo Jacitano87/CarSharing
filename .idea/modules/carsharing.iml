@@ -24,36 +24,9 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="SBT: org.scala-lang:scala-library:2.11.8:jar" level="project" />
-    <orderEntry type="library" name="SBT: org.typelevel:machinist_2.11:0.4.1:jar" level="project" />
-    <orderEntry type="library" name="SBT: org.spire-math:spire_2.11:0.11.0:jar" level="project" />
-    <orderEntry type="library" name="SBT: org.spire-math:spire-macros_2.11:0.11.0:jar" level="project" />
-    <orderEntry type="library" name="SBT: org.scodec:scodec-core_2.11:1.8.3:jar" level="project" />
-    <orderEntry type="library" name="SBT: org.scodec:scodec-bits_2.11:1.0.11:jar" level="project" />
-    <orderEntry type="library" name="SBT: org.scalaz:scalaz-effect_2.11:7.1.2:jar" level="project" />
-    <orderEntry type="library" name="SBT: org.scalaz:scalaz-core_2.11:7.1.2:jar" level="project" />
-    <orderEntry type="library" name="SBT: org.scalaz:scalaz-concurrent_2.11:7.1.2:jar" level="project" />
-    <orderEntry type="library" name="SBT: org.scala-lang.modules:scala-xml_2.11:1.0.4:jar" level="project" />
-    <orderEntry type="library" name="SBT: org.scala-lang.modules:scala-parser-combinators_2.11:1.0.4:jar" level="project" />
-    <orderEntry type="library" name="SBT: org.scala-lang:scala-xml:2.11.0-M4:jar" level="project" />
-    <orderEntry type="library" name="SBT: org.scala-lang:scala-reflect:2.11.7:jar" level="project" />
-    <orderEntry type="library" name="SBT: org.scala-lang:scala-compiler:2.11.4:jar" level="project" />
-    <orderEntry type="library" name="SBT: org.json4s:json4s-native_2.11:3.2.11:jar" level="project" />
-    <orderEntry type="library" name="SBT: org.json4s:json4s-core_2.11:3.2.11:jar" level="project" />
-    <orderEntry type="library" name="SBT: org.json4s:json4s-ast_2.11:3.2.11:jar" level="project" />
-    <orderEntry type="library" name="SBT: org.joda:joda-convert:1.7:jar" level="project" />
-    <orderEntry type="library" name="SBT: org.apache.commons:commons-compress:1.8.1:jar" level="project" />
-    <orderEntry type="library" name="SBT: joda-time:joda-time:2.3:jar" level="project" />
-    <orderEntry type="library" name="SBT: io.plasmap:geow_2.11:0.3.11-SNAPSHOT:jar" level="project" />
-    <orderEntry type="library" name="SBT: io.argonaut:argonaut_2.11:6.1-M5:jar" level="project" />
-    <orderEntry type="library" name="SBT: com.twitter:chill_2.11:0.7.2:jar" level="project" />
-    <orderEntry type="library" name="SBT: com.twitter:chill-java:0.7.2:jar" level="project" />
-    <orderEntry type="library" name="SBT: com.twitter:chill-bijection_2.11:0.7.2:jar" level="project" />
-    <orderEntry type="library" name="SBT: com.twitter:bijection-core_2.11:0.8.0:jar" level="project" />
-    <orderEntry type="library" name="SBT: com.google.protobuf:protobuf-java:2.6.1:jar" level="project" />
-    <orderEntry type="library" name="SBT: com.github.julien-truffaut:monocle-macro_2.11:0.5.1:jar" level="project" />
-    <orderEntry type="library" name="SBT: com.github.julien-truffaut:monocle-core_2.11:0.5.1:jar" level="project" />
-    <orderEntry type="library" name="SBT: com.github.alexarchambault:argonaut-shapeless_6.1_2.11:0.1.1:jar" level="project" />
-    <orderEntry type="library" name="SBT: com.chuusai:shapeless_2.11:2.2.5:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.apache.spark:spark-graphx_2.11:1.6.1:jar" level="project" />
+    <orderEntry type="library" name="SBT: net.sourceforge.f2j:arpack_combined_all:0.1:jar" level="project" />
+    <orderEntry type="library" name="SBT: com.github.fommil.netlib:core:1.1.2:jar" level="project" />
     <orderEntry type="module-library">
       <library name="SBT: unmanaged-sources-and-docs">
         <CLASSES />
@@ -176,5 +149,36 @@
     <orderEntry type="library" name="SBT: com.clearspring.analytics:stream:2.7.0:jar" level="project" />
     <orderEntry type="library" name="SBT: asm:asm:3.2:jar" level="project" />
     <orderEntry type="library" name="SBT: aopalliance:aopalliance:1.0:jar" level="project" />
+    <orderEntry type="library" name="SBT: com.chuusai:shapeless_2.11:2.2.5:jar" level="project" />
+    <orderEntry type="library" name="SBT: com.github.alexarchambault:argonaut-shapeless_6.1_2.11:0.1.1:jar" level="project" />
+    <orderEntry type="library" name="SBT: com.github.julien-truffaut:monocle-core_2.11:0.5.1:jar" level="project" />
+    <orderEntry type="library" name="SBT: com.github.julien-truffaut:monocle-macro_2.11:0.5.1:jar" level="project" />
+    <orderEntry type="library" name="SBT: com.google.protobuf:protobuf-java:2.6.1:jar" level="project" />
+    <orderEntry type="library" name="SBT: com.twitter:bijection-core_2.11:0.8.0:jar" level="project" />
+    <orderEntry type="library" name="SBT: com.twitter:chill-bijection_2.11:0.7.2:jar" level="project" />
+    <orderEntry type="library" name="SBT: com.twitter:chill-java:0.7.2:jar" level="project" />
+    <orderEntry type="library" name="SBT: com.twitter:chill_2.11:0.7.2:jar" level="project" />
+    <orderEntry type="library" name="SBT: io.argonaut:argonaut_2.11:6.1-M5:jar" level="project" />
+    <orderEntry type="library" name="SBT: io.plasmap:geow_2.11:0.3.11-SNAPSHOT:jar" level="project" />
+    <orderEntry type="library" name="SBT: joda-time:joda-time:2.3:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.apache.commons:commons-compress:1.8.1:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.joda:joda-convert:1.7:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.json4s:json4s-ast_2.11:3.2.11:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.json4s:json4s-core_2.11:3.2.11:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.json4s:json4s-native_2.11:3.2.11:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.ow2.asm:asm:4.0:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.scala-lang:scala-compiler:2.11.4:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.scala-lang:scala-reflect:2.11.7:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.scala-lang:scala-xml:2.11.0-M4:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.scala-lang.modules:scala-parser-combinators_2.11:1.0.4:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.scala-lang.modules:scala-xml_2.11:1.0.4:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.scalaz:scalaz-concurrent_2.11:7.1.2:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.scalaz:scalaz-core_2.11:7.1.2:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.scalaz:scalaz-effect_2.11:7.1.2:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.scodec:scodec-bits_2.11:1.0.11:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.scodec:scodec-core_2.11:1.8.3:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.spire-math:spire-macros_2.11:0.11.0:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.spire-math:spire_2.11:0.11.0:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.typelevel:machinist_2.11:0.4.1:jar" level="project" />
   </component>
 </module>

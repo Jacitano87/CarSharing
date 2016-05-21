@@ -1,4 +1,6 @@
 import io.plasmap.parser.OsmParser
+import org.apache.spark.graphx._
+import org.apache.spark.rdd.RDD
 import org.apache.spark.{SparkConf, SparkContext}
 
 /**
@@ -11,9 +13,6 @@ object Graph_x {
 
     //Configurazione Spark
 
-    //val listNodes = scala.collection.mutable.MutableList[Node]()
-   // val wayList = scala.collection.mutable.MutableList[Way]()
-  //  val wayObj = wayObject(9000,List(1,2,3),"Primaria","Via minkia",true)
     val config = new SparkConf()
     config.setMaster("local")
     config.setAppName("Graph_X")
@@ -23,124 +22,113 @@ object Graph_x {
     val parser2 = OsmParser("/Users/AntonioFischetti/desktop/Acireale.osm")
 
     val _listWay = scala.collection.mutable.MutableList[_wayObject]()
-    val _listNodeTemp = scala.collection.mutable.MutableList[_nodeObject]()
-    val _listNodeFinal = scala.collection.mutable.MutableList[_nodeObject]()
+    val _listOSMNode = scala.collection.mutable.MutableList[_nodeObject]()
+    val _listNodeWay = scala.collection.mutable.MutableList[String]()
+
+    // Vertex and Link
+    val _arrayVertex = scala.collection.mutable.MutableList[(Long,String)]()
+    val _arrayEdge = scala.collection.mutable.MutableList[Edge[(String)]]()
 
     val way = new WayParser()
     val node = new NodeParser()
+    val relation = new RelationClass()
 
-    println("Start Parsing data...")
-
+    println("Start Parsing Way...")
     // Way get Primary - Secondary - Tertiary - Residential - Unclassified - Road - Living Street
     parser.foreach(elementOption => {
       if (way._isWay(elementOption)) {
         if (way._isHighway(elementOption)) {
             val _way = way.getWayParsed(elementOption)
             val _objWay = wayObject(_way._1,_way._2,_way._3,_way._4,_way._5)
+          _way._5.foreach(
+            stringNodo => {
 
+              _listNodeWay.+=(stringNodo)
+
+              //Create Vertex Graph
+              _arrayVertex.+=((stringNodo.toLong, stringNodo))
+            }
+          )
             _listWay.+=(_objWay)
+
 
         }
       } /** Close isWay**/
 
+      println("Start Parsing Node...")
+
       if(node._isNode(elementOption)){
         val _node = node.getNodeParsed(elementOption)
         val _objNode = nodeObject(_node._1,_node._2,_node._3)
-        _listNodeTemp.+=(_objNode)
+        _listOSMNode.+=(_objNode)
       } /** Close isNode**/
+
+      println("Start Parsing Relation...")
+
+      if(relation._isRelation(elementOption)){
+        relation.getRelationParsed(elementOption)
+      }/** Close isRelation**/
+
     }
     ) /** Close ForeachParser**/
 
-    println("Finish Parsing data...")
+
+    println("Finish Parsing...")
+
+    println("Start Creation Graph...")
+
+
+
+
+  _listWay.foreach(
+   element => {
+       if(element.nodeList.size > 1) {
+
+         val splitted:List[(String,String)] = split(element.nodeList)
+         for (string <- splitted) {
+           _arrayEdge.+=(Edge(string._1.toLong, string._2.toLong, element.idWay))
+         }
+
+       }
+   }
+  )
+    val nodesRDD: RDD[(VertexId, String)] = sc.parallelize(_arrayVertex)
+    val linkRDD: RDD[Edge[String]] = sc.parallelize(_arrayEdge)
+
+    val graph  = Graph(nodesRDD, linkRDD)
+
+    println("Finish Creation Graph...")
+
+
+
 
 
   } // Close Main
-}
-    /**
-      * parser2.foreach(elementOption => {
-      * if(node._isNode(elementOption)){
-      * //  node._a(elementOption)
-      * //println("Is A Node")
-      * }
-      * }
-      * )
-      * }
-      * }
-    **/
+  def split(list: List[String]): List[(String, String)] = list match {
 
+      case first :: second :: Nil => List((first, second))
+      case first :: second :: tail => (first, second) :: split(second :: tail)
+
+    }
+
+
+}
+class EdgeProperty()
+class VertexProperty()
 //case class Way(id:OsmId,lat:Double,long:Double)
 
 /**
-  * parser.foreach(elementOption =>
-  * elementOption.fold(println("no parse")){ //fold la applica solo
-  * element =>
-  * if(element.isNode)
-  * element.nodeOption.fold(println("Non funge")) {
-  * node => {
-  * // listNodes += Node(element.id,node.point.lat,node.point.lon,element.tags)
-  * //println(Node(element.id,node.point.lat,node.point.lon,element.tags))
-  * }
   **
-  *}
-  *if(element.isWay)
-  *element.wayOption.fold(println("Nessun Elemento")){
-  *node => {
-  *node.wayOption.fold(println("Nessun Elemento")){
-  *element => {
-  *element.wayOption.fold(println("Nessun Elemento")){
-  *ele => {
-  *ele.tags.headOption.fold(println("Nes")){
-  *el => {
-  *if(el.key == "highway" && el.value == "primary") println(el.value)
+ *class VertexProperty()
+ *class EdgeProperty()
   **
-  *if(el.key == "highway" && el.value == "secondary") println(el.value)
+ *class VertexProperty()
+  *case class UserProperty(name: String) extends VertexProperty
+  *case class ProductProperty(name: String, price: Double) extends VertexProperty
+  *var graph: Graph[VertexProperty, String] = null
   **
-  *if(el.key == "highway" && el.value == "tertiary") println(el.value)
-  **
- *if(el.key == "highway" && el.value == "residential") println(el.value)
-  **
- *if(el.key == "highway" && el.value == "unclassified") println(el.value)
-  **
- *if(el.key == "highway" && el.value == "road") println(el.value)
-  **
- *if(el.key == "highway" && el.value == "livingstreet") println(el.value)
-  *}
-  *}
-  *}
-  * }
-  **
-  *}
- **
- *}
-  *}
-  * }
-  **
-  * }
-  **
-  * )
-  **
-  *
-  * }
-  **
-  *
- *}
- **
- *case class NodeGraph(id:OsmId,
-  *tags:List[OsmTag],
-  *nodeOption:Option[OsmNode],
-  *relationOption:Option[OsmRelation],
-  *user:Option[OsmUser],
-  *version:OsmVersion,
-  *wayOption:Option[OsmWay])
- **
- *case class Node(id:OsmId,
-  *lat:Double,
-  *lon:Double,
-  *tags:List[OsmTag]
-  *)
- **
- *case class Way(id:OsmId)
- **
- *case class Relation()
-  *
-  **/
+ *case class _vertexObject(   idNode:Long,
+  *tag:String
+  *) extends VertexProperty
+ *
+ **/

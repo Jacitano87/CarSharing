@@ -1,6 +1,5 @@
 [debug] Other repositories:
 [debug] Default repositories:
 [debug] Using inline dependencies specified in Scala.
-[debug] Using inline dependencies specified in Scala.
 [warn] Binary version (2.11.0-M4) for dependency org.scala-lang#scala-xml;2.11.0-M4
 [warn] 	in default#carsharing$sources_2.11;1.0 differs from Scala binary version in project (2.11).

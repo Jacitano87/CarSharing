@@ -18,9 +18,13 @@ class NodeParser() {
       element =>
           element.nodeOption.fold("","","") {
             node => {
-             if(node.tags.length == 0) {
+             if(node.tags.isEmpty) {
                (element.id.toString(), node.point.lat.toString(), node.point.lon.toString())
              }
+              else
+               {
+                 ("","","")
+               }
               //println("idNodo: " + element.id + " latNodo: " + node.point.lat + " lonNodo: " + node.point.lon)
             }
 

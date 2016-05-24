@@ -12,7 +12,7 @@
 [debug] == resolving dependencies for default#carsharing$sources_2.11;1.0 [compile]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.scala-lang#scala-library;2.11.8 [compile->default(compile)]
 [info] Resolving org.scala-lang#scala-library;2.11.8 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2db2eec0
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2e36194f
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.8
 [debug] 	found org.scala-lang#scala-library;2.11.8 in sbt-chain
 [debug] 	[2.11.8] org.scala-lang#scala-library;2.11.8
@@ -21,10 +21,10 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.scala-lang#scala-library;2.11.8 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->io.plasmap#geow_2.11;0.3.11-SNAPSHOT [compile->default(compile)]
 [info] Resolving io.plasmap#geow_2.11;0.3.11-SNAPSHOT ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7e8e50df
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@41c58040
 [debug] don't use cache for io.plasmap#geow_2.11;0.3.11-SNAPSHOT: changing=true
 [info] Resolving io.plasmap#geow_2.11;0.3.11-SNAPSHOT ...
-[debug] sbt-chain-delegate: Checking cache for: sbt.ivyint.MergedDescriptors@7e8e50df
+[debug] sbt-chain-delegate: Checking cache for: sbt.ivyint.MergedDescriptors@41c58040
 [debug] don't use cache for io.plasmap#geow_2.11;0.3.11-SNAPSHOT: changing=true
 [debug] don't use cache for io.plasmap#geow_2.11;0.3.11-SNAPSHOT: changing=true
 [debug] 		tried /Users/AntonioFischetti/.ivy2/local/io.plasmap/geow_2.11/0.3.11-SNAPSHOT/ivys/ivy.xml
@@ -64,7 +64,7 @@
 [warn]   https://oss.sonatype.org/content/repositories/snapshots/io/plasmap/geow_2.11/0.3.11-SNAPSHOT/geow_2.11-0.3.11-SNAPSHOT.pom
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.spire-math#spire_2.11;0.11.0 [compile->default(compile)]
 [info] Resolving org.spire-math#spire_2.11;0.11.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@15692624
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@699c555
 [debug] sbt-chain: module revision found in cache: org.spire-math#spire_2.11;0.11.0
 [debug] 	found org.spire-math#spire_2.11;0.11.0 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.spire-math#spire_2.11;0.11.0 [compile->runtime]
@@ -72,7 +72,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.spire-math#spire_2.11;0.11.0 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.spire-math#spire-macros_2.11;0.11.0 [compile->default(compile)]
 [info] Resolving org.spire-math#spire-macros_2.11;0.11.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@100a1d95
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7596150a
 [debug] sbt-chain: module revision found in cache: org.spire-math#spire-macros_2.11;0.11.0
 [debug] 	found org.spire-math#spire-macros_2.11;0.11.0 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.spire-math#spire-macros_2.11;0.11.0 [compile->runtime]
@@ -80,7 +80,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.spire-math#spire-macros_2.11;0.11.0 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.typelevel#machinist_2.11;0.4.1 [compile->default(compile)]
 [info] Resolving org.typelevel#machinist_2.11;0.4.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@62446eac
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@196216bb
 [debug] sbt-chain: module revision found in cache: org.typelevel#machinist_2.11;0.4.1
 [debug] 	found org.typelevel#machinist_2.11;0.4.1 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.typelevel#machinist_2.11;0.4.1 [compile->runtime]
@@ -88,7 +88,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.typelevel#machinist_2.11;0.4.1 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.scala-lang#scala-reflect;2.11.7 [compile->default(compile)]
 [info] Resolving org.scala-lang#scala-reflect;2.11.7 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@39836dd1
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3d3277b2
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-reflect;2.11.7
 [debug] 	found org.scala-lang#scala-reflect;2.11.7 in sbt-chain
 [debug] 	[2.11.7] org.scala-lang#scala-reflect;2.11.7
@@ -97,7 +97,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.scala-lang#scala-reflect;2.11.7 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.scalaz#scalaz-core_2.11;7.1.2 [compile->default(compile)]
 [info] Resolving org.scalaz#scalaz-core_2.11;7.1.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7409433a
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@30e7327b
 [debug] sbt-chain: module revision found in cache: org.scalaz#scalaz-core_2.11;7.1.2
 [debug] 	found org.scalaz#scalaz-core_2.11;7.1.2 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.scalaz#scalaz-core_2.11;7.1.2 [compile->runtime]
@@ -105,7 +105,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.scalaz#scalaz-core_2.11;7.1.2 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 [compile->default(compile)]
 [info] Resolving org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@525a16d
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1a4b1b0c
 [debug] sbt-chain: module revision found in cache: org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4
 [debug] 	found org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 [compile->runtime]
@@ -113,7 +113,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.4 [compile->default(compile)]
 [info] Resolving org.scala-lang.modules#scala-xml_2.11;1.0.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1c79ff92
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4238299c
 [debug] sbt-chain: module revision found in cache: org.scala-lang.modules#scala-xml_2.11;1.0.4
 [debug] 	found org.scala-lang.modules#scala-xml_2.11;1.0.4 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.4 [compile->runtime]
@@ -121,7 +121,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.4 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.scalaz#scalaz-concurrent_2.11;7.1.2 [compile->default(compile)]
 [info] Resolving org.scalaz#scalaz-concurrent_2.11;7.1.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2796d4e2
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3de62fd8
 [debug] sbt-chain: module revision found in cache: org.scalaz#scalaz-concurrent_2.11;7.1.2
 [debug] 	found org.scalaz#scalaz-concurrent_2.11;7.1.2 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.scalaz#scalaz-concurrent_2.11;7.1.2 [compile->runtime]
@@ -129,7 +129,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.scalaz#scalaz-concurrent_2.11;7.1.2 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.scalaz#scalaz-effect_2.11;7.1.2 [compile->default(compile)]
 [info] Resolving org.scalaz#scalaz-effect_2.11;7.1.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7351549c
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@191b6795
 [debug] sbt-chain: module revision found in cache: org.scalaz#scalaz-effect_2.11;7.1.2
 [debug] 	found org.scalaz#scalaz-effect_2.11;7.1.2 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.scalaz#scalaz-effect_2.11;7.1.2 [compile->runtime]
@@ -137,7 +137,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.scalaz#scalaz-effect_2.11;7.1.2 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.github.alexarchambault#argonaut-shapeless_6.1_2.11;0.1.1 [compile->default(compile)]
 [info] Resolving com.github.alexarchambault#argonaut-shapeless_6.1_2.11;0.1.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5ba67f93
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4aad700b
 [debug] sbt-chain: module revision found in cache: com.github.alexarchambault#argonaut-shapeless_6.1_2.11;0.1.1
 [debug] 	found com.github.alexarchambault#argonaut-shapeless_6.1_2.11;0.1.1 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.github.alexarchambault#argonaut-shapeless_6.1_2.11;0.1.1 [compile->runtime]
@@ -145,7 +145,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.github.alexarchambault#argonaut-shapeless_6.1_2.11;0.1.1 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->io.argonaut#argonaut_2.11;6.1-M5 [compile->default(compile)]
 [info] Resolving io.argonaut#argonaut_2.11;6.1-M5 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3f2d36ab
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@558d2720
 [debug] sbt-chain: module revision found in cache: io.argonaut#argonaut_2.11;6.1-M5
 [debug] 	found io.argonaut#argonaut_2.11;6.1-M5 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->io.argonaut#argonaut_2.11;6.1-M5 [compile->runtime]
@@ -153,7 +153,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->io.argonaut#argonaut_2.11;6.1-M5 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.scala-lang#scala-compiler;2.11.4 [compile->default(compile)]
 [info] Resolving org.scala-lang#scala-compiler;2.11.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5862fd80
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@40f30dee
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-compiler;2.11.4
 [debug] 	found org.scala-lang#scala-compiler;2.11.4 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.scala-lang#scala-compiler;2.11.4 [compile->runtime]
@@ -161,7 +161,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.scala-lang#scala-compiler;2.11.4 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.github.julien-truffaut#monocle-core_2.11;0.5.1 [compile->default(compile)]
 [info] Resolving com.github.julien-truffaut#monocle-core_2.11;0.5.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@42e05502
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3e866fe
 [debug] sbt-chain: module revision found in cache: com.github.julien-truffaut#monocle-core_2.11;0.5.1
 [debug] 	found com.github.julien-truffaut#monocle-core_2.11;0.5.1 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.github.julien-truffaut#monocle-core_2.11;0.5.1 [compile->runtime]
@@ -169,7 +169,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.github.julien-truffaut#monocle-core_2.11;0.5.1 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.github.julien-truffaut#monocle-macro_2.11;0.5.1 [compile->default(compile)]
 [info] Resolving com.github.julien-truffaut#monocle-macro_2.11;0.5.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@44f70f0d
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@61548036
 [debug] sbt-chain: module revision found in cache: com.github.julien-truffaut#monocle-macro_2.11;0.5.1
 [debug] 	found com.github.julien-truffaut#monocle-macro_2.11;0.5.1 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.github.julien-truffaut#monocle-macro_2.11;0.5.1 [compile->runtime]
@@ -177,7 +177,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.github.julien-truffaut#monocle-macro_2.11;0.5.1 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.json4s#json4s-native_2.11;3.2.11 [compile->default(compile)]
 [info] Resolving org.json4s#json4s-native_2.11;3.2.11 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5c6f2e62
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@39bccf3
 [debug] sbt-chain: module revision found in cache: org.json4s#json4s-native_2.11;3.2.11
 [debug] 	found org.json4s#json4s-native_2.11;3.2.11 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.json4s#json4s-native_2.11;3.2.11 [compile->runtime]
@@ -185,7 +185,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.json4s#json4s-native_2.11;3.2.11 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.json4s#json4s-core_2.11;3.2.11 [compile->default(compile)]
 [info] Resolving org.json4s#json4s-core_2.11;3.2.11 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3e1f0eeb
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@451938a6
 [debug] sbt-chain: module revision found in cache: org.json4s#json4s-core_2.11;3.2.11
 [debug] 	found org.json4s#json4s-core_2.11;3.2.11 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.json4s#json4s-core_2.11;3.2.11 [compile->runtime]
@@ -193,7 +193,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.json4s#json4s-core_2.11;3.2.11 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.json4s#json4s-ast_2.11;3.2.11 [compile->default(compile)]
 [info] Resolving org.json4s#json4s-ast_2.11;3.2.11 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@67a33e74
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6ff5af02
 [debug] sbt-chain: module revision found in cache: org.json4s#json4s-ast_2.11;3.2.11
 [debug] 	found org.json4s#json4s-ast_2.11;3.2.11 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.json4s#json4s-ast_2.11;3.2.11 [compile->runtime]
@@ -201,7 +201,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.json4s#json4s-ast_2.11;3.2.11 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.thoughtworks.paranamer#paranamer;2.6 [compile->default(compile)]
 [info] Resolving com.thoughtworks.paranamer#paranamer;2.6 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3762c519
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@177a6145
 [debug] sbt-chain: module revision found in cache: com.thoughtworks.paranamer#paranamer;2.6
 [debug] 	found com.thoughtworks.paranamer#paranamer;2.6 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.thoughtworks.paranamer#paranamer;2.6 [compile->runtime]
@@ -209,7 +209,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.thoughtworks.paranamer#paranamer;2.6 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.scala-lang#scalap;2.11.0 [compile->default(compile)]
 [info] Resolving org.scala-lang#scalap;2.11.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3e4b4da3
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1181f891
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scalap;2.11.0
 [debug] 	found org.scala-lang#scalap;2.11.0 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.scala-lang#scalap;2.11.0 [compile->runtime]
@@ -217,7 +217,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.scala-lang#scalap;2.11.0 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.scodec#scodec-core_2.11;1.8.3 [compile->default(compile)]
 [info] Resolving org.scodec#scodec-core_2.11;1.8.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2767925
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@85e87c3
 [debug] sbt-chain: module revision found in cache: org.scodec#scodec-core_2.11;1.8.3
 [debug] 	found org.scodec#scodec-core_2.11;1.8.3 in sbt-chain
 [debug] 	[1.8.3] org.scodec#scodec-core_2.11;1.8.3
@@ -226,7 +226,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.scodec#scodec-core_2.11;1.8.3 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.scodec#scodec-bits_2.11;1.0.11 [compile->default(compile)]
 [info] Resolving org.scodec#scodec-bits_2.11;1.0.11 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3e0c4a25
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5e0e7ec6
 [debug] sbt-chain: module revision found in cache: org.scodec#scodec-bits_2.11;1.0.11
 [debug] 	found org.scodec#scodec-bits_2.11;1.0.11 in sbt-chain
 [debug] 	[1.0.11] org.scodec#scodec-bits_2.11;1.0.11
@@ -235,7 +235,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.scodec#scodec-bits_2.11;1.0.11 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.chuusai#shapeless_2.11;2.2.5 [compile->default(compile)]
 [info] Resolving com.chuusai#shapeless_2.11;2.2.5 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7d32f300
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@742a44b1
 [debug] sbt-chain: module revision found in cache: com.chuusai#shapeless_2.11;2.2.5
 [debug] 	found com.chuusai#shapeless_2.11;2.2.5 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.chuusai#shapeless_2.11;2.2.5 [compile->runtime]
@@ -243,7 +243,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.chuusai#shapeless_2.11;2.2.5 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.twitter#chill-bijection_2.11;0.7.2 [compile->default(compile)]
 [info] Resolving com.twitter#chill-bijection_2.11;0.7.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@51efaec8
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@21998a77
 [debug] sbt-chain: module revision found in cache: com.twitter#chill-bijection_2.11;0.7.2
 [debug] 	found com.twitter#chill-bijection_2.11;0.7.2 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.twitter#chill-bijection_2.11;0.7.2 [compile->runtime]
@@ -251,7 +251,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.twitter#chill-bijection_2.11;0.7.2 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.twitter#chill_2.11;0.7.2 [compile->default(compile)]
 [info] Resolving com.twitter#chill_2.11;0.7.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2b8d4806
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6bb9aaf9
 [debug] sbt-chain: module revision found in cache: com.twitter#chill_2.11;0.7.2
 [debug] 	found com.twitter#chill_2.11;0.7.2 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.twitter#chill_2.11;0.7.2 [compile->runtime]
@@ -259,7 +259,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.twitter#chill_2.11;0.7.2 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.twitter#chill-java;0.7.2 [compile->default(compile)]
 [info] Resolving com.twitter#chill-java;0.7.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@34bd84f1
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@48a48dd2
 [debug] sbt-chain: module revision found in cache: com.twitter#chill-java;0.7.2
 [debug] 	found com.twitter#chill-java;0.7.2 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.twitter#chill-java;0.7.2 [compile->runtime]
@@ -267,7 +267,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.twitter#chill-java;0.7.2 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.esotericsoftware.kryo#kryo;2.21 [compile->default(compile)]
 [info] Resolving com.esotericsoftware.kryo#kryo;2.21 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6a546d4f
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@53f56055
 [debug] sbt-chain: module revision found in cache: com.esotericsoftware.kryo#kryo;2.21
 [debug] 	found com.esotericsoftware.kryo#kryo;2.21 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.esotericsoftware.kryo#kryo;2.21 [compile->runtime]
@@ -275,7 +275,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.esotericsoftware.kryo#kryo;2.21 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.esotericsoftware.reflectasm#reflectasm;1.07 [compile->default(compile)]
 [info] Resolving com.esotericsoftware.reflectasm#reflectasm;1.07 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6ce021d
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6fd152f2
 [debug] sbt-chain: module revision found in cache: com.esotericsoftware.reflectasm#reflectasm;1.07
 [debug] 	found com.esotericsoftware.reflectasm#reflectasm;1.07 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.esotericsoftware.reflectasm#reflectasm;1.07 [compile->runtime]
@@ -283,7 +283,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.esotericsoftware.reflectasm#reflectasm;1.07 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.ow2.asm#asm;4.0 [compile->default(compile)]
 [info] Resolving org.ow2.asm#asm;4.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@68d03b99
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7084251e
 [debug] sbt-chain: module revision found in cache: org.ow2.asm#asm;4.0
 [debug] 	found org.ow2.asm#asm;4.0 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.ow2.asm#asm;4.0 [compile->runtime]
@@ -291,7 +291,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.ow2.asm#asm;4.0 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.esotericsoftware.minlog#minlog;1.2 [compile->default(compile)]
 [info] Resolving com.esotericsoftware.minlog#minlog;1.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@16911f35
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@17fa6421
 [debug] sbt-chain: module revision found in cache: com.esotericsoftware.minlog#minlog;1.2
 [debug] 	found com.esotericsoftware.minlog#minlog;1.2 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.esotericsoftware.minlog#minlog;1.2 [compile->runtime]
@@ -299,7 +299,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.esotericsoftware.minlog#minlog;1.2 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.objenesis#objenesis;1.2 [compile->default(compile)]
 [info] Resolving org.objenesis#objenesis;1.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@512727f
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@69812d87
 [debug] sbt-chain: module revision found in cache: org.objenesis#objenesis;1.2
 [debug] 	found org.objenesis#objenesis;1.2 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.objenesis#objenesis;1.2 [compile->runtime]
@@ -307,7 +307,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.objenesis#objenesis;1.2 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.twitter#bijection-core_2.11;0.8.0 [compile->default(compile)]
 [info] Resolving com.twitter#bijection-core_2.11;0.8.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3b9a9ceb
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@78b37070
 [debug] sbt-chain: module revision found in cache: com.twitter#bijection-core_2.11;0.8.0
 [debug] 	found com.twitter#bijection-core_2.11;0.8.0 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.twitter#bijection-core_2.11;0.8.0 [compile->runtime]
@@ -315,7 +315,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.twitter#bijection-core_2.11;0.8.0 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.commons#commons-compress;1.8.1 [compile->default(compile)]
 [info] Resolving org.apache.commons#commons-compress;1.8.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1af478ce
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@63640b7d
 [debug] sbt-chain: module revision found in cache: org.apache.commons#commons-compress;1.8.1
 [debug] 	found org.apache.commons#commons-compress;1.8.1 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.commons#commons-compress;1.8.1 [compile->runtime]
@@ -323,7 +323,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.commons#commons-compress;1.8.1 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.scala-lang#scala-xml;2.11.0-M4 [compile->default(compile)]
 [info] Resolving org.scala-lang#scala-xml;2.11.0-M4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2d61990a
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1e6701c8
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-xml;2.11.0-M4
 [debug] 	found org.scala-lang#scala-xml;2.11.0-M4 in sbt-chain
 [debug] 	[2.11.0-M4] org.scala-lang#scala-xml;2.11.0-M4
@@ -332,7 +332,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.scala-lang#scala-xml;2.11.0-M4 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->joda-time#joda-time;2.3 [compile->default(compile)]
 [info] Resolving joda-time#joda-time;2.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2a19c87b
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@52c5558b
 [debug] sbt-chain: module revision found in cache: joda-time#joda-time;2.3
 [debug] 	found joda-time#joda-time;2.3 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->joda-time#joda-time;2.3 [compile->runtime]
@@ -340,7 +340,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->joda-time#joda-time;2.3 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.joda#joda-convert;1.7 [compile->default(compile)]
 [info] Resolving org.joda#joda-convert;1.7 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4763d545
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6e695d57
 [debug] sbt-chain: module revision found in cache: org.joda#joda-convert;1.7
 [debug] 	found org.joda#joda-convert;1.7 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.joda#joda-convert;1.7 [compile->runtime]
@@ -348,7 +348,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.joda#joda-convert;1.7 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.google.protobuf#protobuf-java;2.6.1 [compile->default(compile)]
 [info] Resolving com.google.protobuf#protobuf-java;2.6.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4460bbdd
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1a9bf51a
 [debug] sbt-chain: module revision found in cache: com.google.protobuf#protobuf-java;2.6.1
 [debug] 	found com.google.protobuf#protobuf-java;2.6.1 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.google.protobuf#protobuf-java;2.6.1 [compile->runtime]
@@ -356,7 +356,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.google.protobuf#protobuf-java;2.6.1 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.spark#spark-core_2.11;1.6.1 [compile->default(compile)]
 [info] Resolving org.apache.spark#spark-core_2.11;1.6.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@59033a62
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2f437776
 [debug] sbt-chain: module revision found in cache: org.apache.spark#spark-core_2.11;1.6.1
 [debug] 	found org.apache.spark#spark-core_2.11;1.6.1 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.spark#spark-core_2.11;1.6.1 [compile->runtime]
@@ -364,7 +364,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.spark#spark-core_2.11;1.6.1 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.avro#avro-mapred;1.7.7 [compile->default(compile)]
 [info] Resolving org.apache.avro#avro-mapred;1.7.7 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@35697499
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6d6e6e6
 [debug] sbt-chain: module revision found in cache: org.apache.avro#avro-mapred;1.7.7
 [debug] 	found org.apache.avro#avro-mapred;1.7.7 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.avro#avro-mapred;1.7.7 [compile->runtime]
@@ -372,7 +372,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.avro#avro-mapred;1.7.7 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.avro#avro-ipc;1.7.7 [compile->default(compile)]
 [info] Resolving org.apache.avro#avro-ipc;1.7.7 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@524af16b
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@18d440b1
 [debug] sbt-chain: module revision found in cache: org.apache.avro#avro-ipc;1.7.7
 [debug] 	found org.apache.avro#avro-ipc;1.7.7 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.avro#avro-ipc;1.7.7 [compile->runtime]
@@ -380,7 +380,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.avro#avro-ipc;1.7.7 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.avro#avro;1.7.7 [compile->default(compile)]
 [info] Resolving org.apache.avro#avro;1.7.7 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@52d8a48e
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@b922377
 [debug] sbt-chain: module revision found in cache: org.apache.avro#avro;1.7.7
 [debug] 	found org.apache.avro#avro;1.7.7 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.avro#avro;1.7.7 [compile->runtime]
@@ -388,7 +388,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.avro#avro;1.7.7 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.codehaus.jackson#jackson-core-asl;1.9.13 [compile->default(compile)]
 [info] Resolving org.codehaus.jackson#jackson-core-asl;1.9.13 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@371e89b
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1cf3e284
 [debug] sbt-chain: module revision found in cache: org.codehaus.jackson#jackson-core-asl;1.9.13
 [debug] 	found org.codehaus.jackson#jackson-core-asl;1.9.13 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.codehaus.jackson#jackson-core-asl;1.9.13 [compile->runtime]
@@ -396,7 +396,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.codehaus.jackson#jackson-core-asl;1.9.13 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.codehaus.jackson#jackson-mapper-asl;1.9.13 [compile->default(compile)]
 [info] Resolving org.codehaus.jackson#jackson-mapper-asl;1.9.13 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1cff7545
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1eab5d97
 [debug] sbt-chain: module revision found in cache: org.codehaus.jackson#jackson-mapper-asl;1.9.13
 [debug] 	found org.codehaus.jackson#jackson-mapper-asl;1.9.13 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.codehaus.jackson#jackson-mapper-asl;1.9.13 [compile->runtime]
@@ -404,7 +404,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.codehaus.jackson#jackson-mapper-asl;1.9.13 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.xbean#xbean-asm5-shaded;4.4 [compile->default(compile)]
 [info] Resolving org.apache.xbean#xbean-asm5-shaded;4.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@677b8b6d
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7d500887
 [debug] sbt-chain: module revision found in cache: org.apache.xbean#xbean-asm5-shaded;4.4
 [debug] 	found org.apache.xbean#xbean-asm5-shaded;4.4 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.xbean#xbean-asm5-shaded;4.4 [compile->runtime]
@@ -412,7 +412,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.xbean#xbean-asm5-shaded;4.4 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.hadoop#hadoop-common;2.2.0 [compile->default(compile)]
 [info] Resolving org.apache.hadoop#hadoop-common;2.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2999777c
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5a930d1f
 [debug] sbt-chain: module revision found in cache: org.apache.hadoop#hadoop-common;2.2.0
 [debug] 	found org.apache.hadoop#hadoop-common;2.2.0 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.hadoop#hadoop-common;2.2.0 [compile->runtime]
@@ -420,7 +420,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.hadoop#hadoop-common;2.2.0 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.hadoop#hadoop-annotations;2.2.0 [compile->default(compile)]
 [info] Resolving org.apache.hadoop#hadoop-annotations;2.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@676b9521
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@203e49e6
 [debug] sbt-chain: module revision found in cache: org.apache.hadoop#hadoop-annotations;2.2.0
 [debug] 	found org.apache.hadoop#hadoop-annotations;2.2.0 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.hadoop#hadoop-annotations;2.2.0 [compile->runtime]
@@ -428,7 +428,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.hadoop#hadoop-annotations;2.2.0 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->commons-cli#commons-cli;1.2 [compile->default(compile)]
 [info] Resolving commons-cli#commons-cli;1.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@74e16433
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5641b141
 [debug] sbt-chain: module revision found in cache: commons-cli#commons-cli;1.2
 [debug] 	found commons-cli#commons-cli;1.2 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->commons-cli#commons-cli;1.2 [compile->runtime]
@@ -436,7 +436,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->commons-cli#commons-cli;1.2 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.commons#commons-math;2.1 [compile->default(compile)]
 [info] Resolving org.apache.commons#commons-math;2.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6e5ec5a8
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@66a9fa2c
 [debug] sbt-chain: module revision found in cache: org.apache.commons#commons-math;2.1
 [debug] 	found org.apache.commons#commons-math;2.1 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.commons#commons-math;2.1 [compile->runtime]
@@ -444,7 +444,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.commons#commons-math;2.1 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->commons-httpclient#commons-httpclient;3.1 [compile->default(compile)]
 [info] Resolving commons-httpclient#commons-httpclient;3.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@69f2076b
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@732061c
 [debug] sbt-chain: module revision found in cache: commons-httpclient#commons-httpclient;3.1
 [debug] 	found commons-httpclient#commons-httpclient;3.1 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->commons-httpclient#commons-httpclient;3.1 [compile->runtime]
@@ -452,7 +452,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->commons-httpclient#commons-httpclient;3.1 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->commons-codec#commons-codec;1.4 [compile->default(compile)]
 [info] Resolving commons-codec#commons-codec;1.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@25e6420d
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6ef852f3
 [debug] sbt-chain: module revision found in cache: commons-codec#commons-codec;1.4
 [debug] 	found commons-codec#commons-codec;1.4 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->commons-codec#commons-codec;1.4 [compile->runtime]
@@ -460,7 +460,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->commons-codec#commons-codec;1.4 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->log4j#log4j;1.2.17 [compile->default(compile)]
 [info] Resolving log4j#log4j;1.2.17 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@75a8a5f
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@f972418
 [debug] sbt-chain: module revision found in cache: log4j#log4j;1.2.17
 [debug] 	found log4j#log4j;1.2.17 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->log4j#log4j;1.2.17 [compile->runtime]
@@ -468,7 +468,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->log4j#log4j;1.2.17 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->commons-lang#commons-lang;2.5 [compile->default(compile)]
 [info] Resolving commons-lang#commons-lang;2.5 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5f772030
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7b7b6e6f
 [debug] sbt-chain: module revision found in cache: commons-lang#commons-lang;2.5
 [debug] 	found commons-lang#commons-lang;2.5 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->commons-lang#commons-lang;2.5 [compile->runtime]
@@ -476,7 +476,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->commons-lang#commons-lang;2.5 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->commons-configuration#commons-configuration;1.6 [compile->default(compile)]
 [info] Resolving commons-configuration#commons-configuration;1.6 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2d14af9
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@22b8eced
 [debug] sbt-chain: module revision found in cache: commons-configuration#commons-configuration;1.6
 [debug] 	found commons-configuration#commons-configuration;1.6 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->commons-configuration#commons-configuration;1.6 [compile->runtime]
@@ -484,7 +484,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->commons-configuration#commons-configuration;1.6 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->commons-collections#commons-collections;3.2.1 [compile->default(compile)]
 [info] Resolving commons-collections#commons-collections;3.2.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6b24a770
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6e84d1be
 [debug] sbt-chain: module revision found in cache: commons-collections#commons-collections;3.2.1
 [debug] 	found commons-collections#commons-collections;3.2.1 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->commons-collections#commons-collections;3.2.1 [compile->runtime]
@@ -492,7 +492,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->commons-collections#commons-collections;3.2.1 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->commons-digester#commons-digester;1.8 [compile->default(compile)]
 [info] Resolving commons-digester#commons-digester;1.8 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@106f6daa
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7a7b3b84
 [debug] sbt-chain: module revision found in cache: commons-digester#commons-digester;1.8
 [debug] 	found commons-digester#commons-digester;1.8 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->commons-digester#commons-digester;1.8 [compile->runtime]
@@ -500,7 +500,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->commons-digester#commons-digester;1.8 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->commons-beanutils#commons-beanutils;1.7.0 [compile->default(compile)]
 [info] Resolving commons-beanutils#commons-beanutils;1.7.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5edf6049
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7d0875d6
 [debug] sbt-chain: module revision found in cache: commons-beanutils#commons-beanutils;1.7.0
 [debug] 	found commons-beanutils#commons-beanutils;1.7.0 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->commons-beanutils#commons-beanutils;1.7.0 [compile->runtime]
@@ -508,7 +508,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->commons-beanutils#commons-beanutils;1.7.0 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.hadoop#hadoop-auth;2.2.0 [compile->default(compile)]
 [info] Resolving org.apache.hadoop#hadoop-auth;2.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@738b33f
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6ce23d26
 [debug] sbt-chain: module revision found in cache: org.apache.hadoop#hadoop-auth;2.2.0
 [debug] 	found org.apache.hadoop#hadoop-auth;2.2.0 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.hadoop#hadoop-auth;2.2.0 [compile->runtime]
@@ -516,7 +516,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.hadoop#hadoop-auth;2.2.0 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.hadoop#hadoop-hdfs;2.2.0 [compile->default(compile)]
 [info] Resolving org.apache.hadoop#hadoop-hdfs;2.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@77873106
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3618e1b5
 [debug] sbt-chain: module revision found in cache: org.apache.hadoop#hadoop-hdfs;2.2.0
 [debug] 	found org.apache.hadoop#hadoop-hdfs;2.2.0 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.hadoop#hadoop-hdfs;2.2.0 [compile->runtime]
@@ -524,7 +524,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.hadoop#hadoop-hdfs;2.2.0 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.mortbay.jetty#jetty-util;6.1.26 [compile->default(compile)]
 [info] Resolving org.mortbay.jetty#jetty-util;6.1.26 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@316ef840
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@74007266
 [debug] sbt-chain: module revision found in cache: org.mortbay.jetty#jetty-util;6.1.26
 [debug] 	found org.mortbay.jetty#jetty-util;6.1.26 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.mortbay.jetty#jetty-util;6.1.26 [compile->runtime]
@@ -532,9 +532,9 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.mortbay.jetty#jetty-util;6.1.26 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.hadoop#hadoop-mapreduce-client-app;2.2.0 [compile->default(compile)]
 [info] Resolving org.apache.hadoop#hadoop-mapreduce-client-app;2.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2d60b665
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@558f6ea4
 [info] Resolving org.apache.hadoop#hadoop-mapreduce-client-app;2.2.0 ...
-[debug] sbt-chain-delegate: Checking cache for: sbt.ivyint.MergedDescriptors@2d60b665
+[debug] sbt-chain-delegate: Checking cache for: sbt.ivyint.MergedDescriptors@558f6ea4
 [debug] 		tried /Users/AntonioFischetti/.ivy2/local/org.apache.hadoop/hadoop-mapreduce-client-app/2.2.0/ivys/ivy.xml
 [debug] 	local: no ivy file found for org.apache.hadoop#hadoop-mapreduce-client-app;2.2.0
 [debug] 		tried https://jcenter.bintray.com/org/apache/hadoop/hadoop-mapreduce-client-app/2.2.0/hadoop-mapreduce-client-app-2.2.0.pom
@@ -560,9 +560,9 @@
 [warn]   https://oss.sonatype.org/content/repositories/snapshots/org/apache/hadoop/hadoop-mapreduce-client-app/2.2.0/hadoop-mapreduce-client-app-2.2.0.pom
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.hadoop#hadoop-mapreduce-client-common;2.2.0 [compile->default(compile)]
 [info] Resolving org.apache.hadoop#hadoop-mapreduce-client-common;2.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@a6bd926
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6279895
 [info] Resolving org.apache.hadoop#hadoop-mapreduce-client-common;2.2.0 ...
-[debug] sbt-chain-delegate: Checking cache for: sbt.ivyint.MergedDescriptors@a6bd926
+[debug] sbt-chain-delegate: Checking cache for: sbt.ivyint.MergedDescriptors@6279895
 [debug] 		tried /Users/AntonioFischetti/.ivy2/local/org.apache.hadoop/hadoop-mapreduce-client-common/2.2.0/ivys/ivy.xml
 [debug] 	local: no ivy file found for org.apache.hadoop#hadoop-mapreduce-client-common;2.2.0
 [debug] 		tried https://jcenter.bintray.com/org/apache/hadoop/hadoop-mapreduce-client-common/2.2.0/hadoop-mapreduce-client-common-2.2.0.pom
@@ -588,9 +588,9 @@
 [warn]   https://oss.sonatype.org/content/repositories/snapshots/org/apache/hadoop/hadoop-mapreduce-client-common/2.2.0/hadoop-mapreduce-client-common-2.2.0.pom
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.hadoop#hadoop-yarn-common;2.2.0 [compile->default(compile)]
 [info] Resolving org.apache.hadoop#hadoop-yarn-common;2.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@42fee36d
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2b526649
 [info] Resolving org.apache.hadoop#hadoop-yarn-common;2.2.0 ...
-[debug] sbt-chain-delegate: Checking cache for: sbt.ivyint.MergedDescriptors@42fee36d
+[debug] sbt-chain-delegate: Checking cache for: sbt.ivyint.MergedDescriptors@2b526649
 [debug] 		tried /Users/AntonioFischetti/.ivy2/local/org.apache.hadoop/hadoop-yarn-common/2.2.0/ivys/ivy.xml
 [debug] 	local: no ivy file found for org.apache.hadoop#hadoop-yarn-common;2.2.0
 [debug] 		tried https://jcenter.bintray.com/org/apache/hadoop/hadoop-yarn-common/2.2.0/hadoop-yarn-common-2.2.0.pom
@@ -616,9 +616,9 @@
 [warn]   https://oss.sonatype.org/content/repositories/snapshots/org/apache/hadoop/hadoop-yarn-common/2.2.0/hadoop-yarn-common-2.2.0.pom
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.hadoop#hadoop-yarn-api;2.2.0 [compile->default(compile)]
 [info] Resolving org.apache.hadoop#hadoop-yarn-api;2.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@30ffa039
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2ed5bb0
 [info] Resolving org.apache.hadoop#hadoop-yarn-api;2.2.0 ...
-[debug] sbt-chain-delegate: Checking cache for: sbt.ivyint.MergedDescriptors@30ffa039
+[debug] sbt-chain-delegate: Checking cache for: sbt.ivyint.MergedDescriptors@2ed5bb0
 [debug] 		tried /Users/AntonioFischetti/.ivy2/local/org.apache.hadoop/hadoop-yarn-api/2.2.0/ivys/ivy.xml
 [debug] 	local: no ivy file found for org.apache.hadoop#hadoop-yarn-api;2.2.0
 [debug] 		tried https://jcenter.bintray.com/org/apache/hadoop/hadoop-yarn-api/2.2.0/hadoop-yarn-api-2.2.0.pom
@@ -644,7 +644,7 @@
 [warn]   https://oss.sonatype.org/content/repositories/snapshots/org/apache/hadoop/hadoop-yarn-api/2.2.0/hadoop-yarn-api-2.2.0.pom
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.google.inject#guice;3.0 [compile->default(compile)]
 [info] Resolving com.google.inject#guice;3.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@63d5f811
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@33d6e875
 [debug] sbt-chain: module revision found in cache: com.google.inject#guice;3.0
 [debug] 	found com.google.inject#guice;3.0 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.google.inject#guice;3.0 [compile->runtime]
@@ -652,7 +652,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.google.inject#guice;3.0 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->javax.inject#javax.inject;1 [compile->default(compile)]
 [info] Resolving javax.inject#javax.inject;1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@28488dd2
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@70633f50
 [debug] sbt-chain: module revision found in cache: javax.inject#javax.inject;1
 [debug] 	found javax.inject#javax.inject;1 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->javax.inject#javax.inject;1 [compile->runtime]
@@ -660,7 +660,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->javax.inject#javax.inject;1 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->aopalliance#aopalliance;1.0 [compile->default(compile)]
 [info] Resolving aopalliance#aopalliance;1.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@23d86528
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7c8f9a55
 [debug] sbt-chain: module revision found in cache: aopalliance#aopalliance;1.0
 [debug] 	found aopalliance#aopalliance;1.0 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->aopalliance#aopalliance;1.0 [compile->runtime]
@@ -668,7 +668,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->aopalliance#aopalliance;1.0 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.sonatype.sisu.inject#cglib;2.2.1-v20090111 [compile->default(compile)]
 [info] Resolving org.sonatype.sisu.inject#cglib;2.2.1-v20090111 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@234e6491
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6abb019b
 [debug] sbt-chain: module revision found in cache: org.sonatype.sisu.inject#cglib;2.2.1-v20090111
 [debug] 	found org.sonatype.sisu.inject#cglib;2.2.1-v20090111 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.sonatype.sisu.inject#cglib;2.2.1-v20090111 [compile->runtime]
@@ -676,7 +676,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.sonatype.sisu.inject#cglib;2.2.1-v20090111 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.sun.jersey.jersey-test-framework#jersey-test-framework-grizzly2;1.9 [compile->default(compile)]
 [info] Resolving com.sun.jersey.jersey-test-framework#jersey-test-framework-grizzly2;1.9 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3f38fb95
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7902fbda
 [debug] sbt-chain: module revision found in cache: com.sun.jersey.jersey-test-framework#jersey-test-framework-grizzly2;1.9
 [debug] 	found com.sun.jersey.jersey-test-framework#jersey-test-framework-grizzly2;1.9 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.sun.jersey.jersey-test-framework#jersey-test-framework-grizzly2;1.9 [compile->runtime]
@@ -684,7 +684,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.sun.jersey.jersey-test-framework#jersey-test-framework-grizzly2;1.9 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.sun.jersey#jersey-server;1.9 [compile->default(compile)]
 [info] Resolving com.sun.jersey#jersey-server;1.9 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@436493a3
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5ec9eefb
 [debug] sbt-chain: module revision found in cache: com.sun.jersey#jersey-server;1.9
 [debug] 	found com.sun.jersey#jersey-server;1.9 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.sun.jersey#jersey-server;1.9 [compile->runtime]
@@ -692,7 +692,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.sun.jersey#jersey-server;1.9 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.sun.jersey#jersey-json;1.9 [compile->default(compile)]
 [info] Resolving com.sun.jersey#jersey-json;1.9 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2cb7045a
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3e4cd249
 [debug] sbt-chain: module revision found in cache: com.sun.jersey#jersey-json;1.9
 [debug] 	found com.sun.jersey#jersey-json;1.9 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.sun.jersey#jersey-json;1.9 [compile->runtime]
@@ -700,7 +700,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.sun.jersey#jersey-json;1.9 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.codehaus.jettison#jettison;1.1 [compile->default(compile)]
 [info] Resolving org.codehaus.jettison#jettison;1.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6e362299
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4d7c5be5
 [debug] sbt-chain: module revision found in cache: org.codehaus.jettison#jettison;1.1
 [debug] 	found org.codehaus.jettison#jettison;1.1 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.codehaus.jettison#jettison;1.1 [compile->runtime]
@@ -708,7 +708,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.codehaus.jettison#jettison;1.1 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.sun.xml.bind#jaxb-impl;2.2.3-1 [compile->default(compile)]
 [info] Resolving com.sun.xml.bind#jaxb-impl;2.2.3-1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@39ef67cf
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5c5fec1f
 [debug] sbt-chain: module revision found in cache: com.sun.xml.bind#jaxb-impl;2.2.3-1
 [debug] 	found com.sun.xml.bind#jaxb-impl;2.2.3-1 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.sun.xml.bind#jaxb-impl;2.2.3-1 [compile->runtime]
@@ -716,7 +716,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.sun.xml.bind#jaxb-impl;2.2.3-1 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->javax.xml.bind#jaxb-api;2.2.2 [compile->default(compile)]
 [info] Resolving javax.xml.bind#jaxb-api;2.2.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7aabcc42
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5aa143a7
 [debug] sbt-chain: module revision found in cache: javax.xml.bind#jaxb-api;2.2.2
 [debug] 	found javax.xml.bind#jaxb-api;2.2.2 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->javax.xml.bind#jaxb-api;2.2.2 [compile->runtime]
@@ -724,7 +724,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->javax.xml.bind#jaxb-api;2.2.2 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->javax.activation#activation;1.1 [compile->default(compile)]
 [info] Resolving javax.activation#activation;1.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@37fbc222
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@86d289
 [debug] sbt-chain: module revision found in cache: javax.activation#activation;1.1
 [debug] 	found javax.activation#activation;1.1 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->javax.activation#activation;1.1 [compile->runtime]
@@ -732,7 +732,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->javax.activation#activation;1.1 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.codehaus.jackson#jackson-jaxrs;1.8.8 [compile->default(compile)]
 [info] Resolving org.codehaus.jackson#jackson-jaxrs;1.8.8 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@583fa246
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@765b6b4b
 [debug] sbt-chain: module revision found in cache: org.codehaus.jackson#jackson-jaxrs;1.8.8
 [debug] 	found org.codehaus.jackson#jackson-jaxrs;1.8.8 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.codehaus.jackson#jackson-jaxrs;1.8.8 [compile->runtime]
@@ -740,7 +740,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.codehaus.jackson#jackson-jaxrs;1.8.8 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.codehaus.jackson#jackson-xc;1.8.8 [compile->default(compile)]
 [info] Resolving org.codehaus.jackson#jackson-xc;1.8.8 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@58cf81e5
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@71f3340a
 [debug] sbt-chain: module revision found in cache: org.codehaus.jackson#jackson-xc;1.8.8
 [debug] 	found org.codehaus.jackson#jackson-xc;1.8.8 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.codehaus.jackson#jackson-xc;1.8.8 [compile->runtime]
@@ -748,7 +748,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.codehaus.jackson#jackson-xc;1.8.8 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.sun.jersey.contribs#jersey-guice;1.9 [compile->default(compile)]
 [info] Resolving com.sun.jersey.contribs#jersey-guice;1.9 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@24268f98
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@66964987
 [debug] sbt-chain: module revision found in cache: com.sun.jersey.contribs#jersey-guice;1.9
 [debug] 	found com.sun.jersey.contribs#jersey-guice;1.9 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.sun.jersey.contribs#jersey-guice;1.9 [compile->runtime]
@@ -756,9 +756,9 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.sun.jersey.contribs#jersey-guice;1.9 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.hadoop#hadoop-yarn-client;2.2.0 [compile->default(compile)]
 [info] Resolving org.apache.hadoop#hadoop-yarn-client;2.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@12fab540
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7821220c
 [info] Resolving org.apache.hadoop#hadoop-yarn-client;2.2.0 ...
-[debug] sbt-chain-delegate: Checking cache for: sbt.ivyint.MergedDescriptors@12fab540
+[debug] sbt-chain-delegate: Checking cache for: sbt.ivyint.MergedDescriptors@7821220c
 [debug] 		tried /Users/AntonioFischetti/.ivy2/local/org.apache.hadoop/hadoop-yarn-client/2.2.0/ivys/ivy.xml
 [debug] 	local: no ivy file found for org.apache.hadoop#hadoop-yarn-client;2.2.0
 [debug] 		tried https://jcenter.bintray.com/org/apache/hadoop/hadoop-yarn-client/2.2.0/hadoop-yarn-client-2.2.0.pom
@@ -784,9 +784,9 @@
 [warn]   https://oss.sonatype.org/content/repositories/snapshots/org/apache/hadoop/hadoop-yarn-client/2.2.0/hadoop-yarn-client-2.2.0.pom
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.hadoop#hadoop-mapreduce-client-core;2.2.0 [compile->default(compile)]
 [info] Resolving org.apache.hadoop#hadoop-mapreduce-client-core;2.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4a03f7b3
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@10bb5b60
 [info] Resolving org.apache.hadoop#hadoop-mapreduce-client-core;2.2.0 ...
-[debug] sbt-chain-delegate: Checking cache for: sbt.ivyint.MergedDescriptors@4a03f7b3
+[debug] sbt-chain-delegate: Checking cache for: sbt.ivyint.MergedDescriptors@10bb5b60
 [debug] 		tried /Users/AntonioFischetti/.ivy2/local/org.apache.hadoop/hadoop-mapreduce-client-core/2.2.0/ivys/ivy.xml
 [debug] 	local: no ivy file found for org.apache.hadoop#hadoop-mapreduce-client-core;2.2.0
 [debug] 		tried https://jcenter.bintray.com/org/apache/hadoop/hadoop-mapreduce-client-core/2.2.0/hadoop-mapreduce-client-core-2.2.0.pom
@@ -812,9 +812,9 @@
 [warn]   https://oss.sonatype.org/content/repositories/snapshots/org/apache/hadoop/hadoop-mapreduce-client-core/2.2.0/hadoop-mapreduce-client-core-2.2.0.pom
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.hadoop#hadoop-yarn-server-common;2.2.0 [compile->default(compile)]
 [info] Resolving org.apache.hadoop#hadoop-yarn-server-common;2.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1fdb3fba
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5c9c128f
 [info] Resolving org.apache.hadoop#hadoop-yarn-server-common;2.2.0 ...
-[debug] sbt-chain-delegate: Checking cache for: sbt.ivyint.MergedDescriptors@1fdb3fba
+[debug] sbt-chain-delegate: Checking cache for: sbt.ivyint.MergedDescriptors@5c9c128f
 [debug] 		tried /Users/AntonioFischetti/.ivy2/local/org.apache.hadoop/hadoop-yarn-server-common/2.2.0/ivys/ivy.xml
 [debug] 	local: no ivy file found for org.apache.hadoop#hadoop-yarn-server-common;2.2.0
 [debug] 		tried https://jcenter.bintray.com/org/apache/hadoop/hadoop-yarn-server-common/2.2.0/hadoop-yarn-server-common-2.2.0.pom
@@ -840,9 +840,9 @@
 [warn]   https://oss.sonatype.org/content/repositories/snapshots/org/apache/hadoop/hadoop-yarn-server-common/2.2.0/hadoop-yarn-server-common-2.2.0.pom
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.hadoop#hadoop-mapreduce-client-shuffle;2.2.0 [compile->default(compile)]
 [info] Resolving org.apache.hadoop#hadoop-mapreduce-client-shuffle;2.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@334a7893
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@578f447a
 [info] Resolving org.apache.hadoop#hadoop-mapreduce-client-shuffle;2.2.0 ...
-[debug] sbt-chain-delegate: Checking cache for: sbt.ivyint.MergedDescriptors@334a7893
+[debug] sbt-chain-delegate: Checking cache for: sbt.ivyint.MergedDescriptors@578f447a
 [debug] 		tried /Users/AntonioFischetti/.ivy2/local/org.apache.hadoop/hadoop-mapreduce-client-shuffle/2.2.0/ivys/ivy.xml
 [debug] 	local: no ivy file found for org.apache.hadoop#hadoop-mapreduce-client-shuffle;2.2.0
 [debug] 		tried https://jcenter.bintray.com/org/apache/hadoop/hadoop-mapreduce-client-shuffle/2.2.0/hadoop-mapreduce-client-shuffle-2.2.0.pom
@@ -868,9 +868,9 @@
 [warn]   https://oss.sonatype.org/content/repositories/snapshots/org/apache/hadoop/hadoop-mapreduce-client-shuffle/2.2.0/hadoop-mapreduce-client-shuffle-2.2.0.pom
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.hadoop#hadoop-mapreduce-client-jobclient;2.2.0 [compile->default(compile)]
 [info] Resolving org.apache.hadoop#hadoop-mapreduce-client-jobclient;2.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3574f266
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@124773d4
 [info] Resolving org.apache.hadoop#hadoop-mapreduce-client-jobclient;2.2.0 ...
-[debug] sbt-chain-delegate: Checking cache for: sbt.ivyint.MergedDescriptors@3574f266
+[debug] sbt-chain-delegate: Checking cache for: sbt.ivyint.MergedDescriptors@124773d4
 [debug] 		tried /Users/AntonioFischetti/.ivy2/local/org.apache.hadoop/hadoop-mapreduce-client-jobclient/2.2.0/ivys/ivy.xml
 [debug] 	local: no ivy file found for org.apache.hadoop#hadoop-mapreduce-client-jobclient;2.2.0
 [debug] 		tried https://jcenter.bintray.com/org/apache/hadoop/hadoop-mapreduce-client-jobclient/2.2.0/hadoop-mapreduce-client-jobclient-2.2.0.pom
@@ -896,9 +896,9 @@
 [warn]   https://oss.sonatype.org/content/repositories/snapshots/org/apache/hadoop/hadoop-mapreduce-client-jobclient/2.2.0/hadoop-mapreduce-client-jobclient-2.2.0.pom
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.hadoop#hadoop-yarn-server-nodemanager;2.2.0 [compile->default(compile)]
 [info] Resolving org.apache.hadoop#hadoop-yarn-server-nodemanager;2.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7abf50b7
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@44de82d0
 [info] Resolving org.apache.hadoop#hadoop-yarn-server-nodemanager;2.2.0 ...
-[debug] sbt-chain-delegate: Checking cache for: sbt.ivyint.MergedDescriptors@7abf50b7
+[debug] sbt-chain-delegate: Checking cache for: sbt.ivyint.MergedDescriptors@44de82d0
 [debug] 		tried /Users/AntonioFischetti/.ivy2/local/org.apache.hadoop/hadoop-yarn-server-nodemanager/2.2.0/ivys/ivy.xml
 [debug] 	local: no ivy file found for org.apache.hadoop#hadoop-yarn-server-nodemanager;2.2.0
 [debug] 		tried https://jcenter.bintray.com/org/apache/hadoop/hadoop-yarn-server-nodemanager/2.2.0/hadoop-yarn-server-nodemanager-2.2.0.pom
@@ -924,7 +924,7 @@
 [warn]   https://oss.sonatype.org/content/repositories/snapshots/org/apache/hadoop/hadoop-yarn-server-nodemanager/2.2.0/hadoop-yarn-server-nodemanager-2.2.0.pom
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.spark#spark-launcher_2.11;1.6.1 [compile->default(compile)]
 [info] Resolving org.apache.spark#spark-launcher_2.11;1.6.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@300be7c0
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@38361be3
 [debug] sbt-chain: module revision found in cache: org.apache.spark#spark-launcher_2.11;1.6.1
 [debug] 	found org.apache.spark#spark-launcher_2.11;1.6.1 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.spark#spark-launcher_2.11;1.6.1 [compile->runtime]
@@ -932,7 +932,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.spark#spark-launcher_2.11;1.6.1 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.spark-project.spark#unused;1.0.0 [compile->default(compile)]
 [info] Resolving org.spark-project.spark#unused;1.0.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@688a2807
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2ad7c508
 [debug] sbt-chain: module revision found in cache: org.spark-project.spark#unused;1.0.0
 [debug] 	found org.spark-project.spark#unused;1.0.0 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.spark-project.spark#unused;1.0.0 [compile->runtime]
@@ -940,7 +940,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.spark-project.spark#unused;1.0.0 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.spark#spark-network-common_2.11;1.6.1 [compile->default(compile)]
 [info] Resolving org.apache.spark#spark-network-common_2.11;1.6.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4692cbd4
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@32c61d2e
 [debug] sbt-chain: module revision found in cache: org.apache.spark#spark-network-common_2.11;1.6.1
 [debug] 	found org.apache.spark#spark-network-common_2.11;1.6.1 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.spark#spark-network-common_2.11;1.6.1 [compile->runtime]
@@ -948,7 +948,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.spark#spark-network-common_2.11;1.6.1 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->io.netty#netty-all;4.0.29.Final [compile->default(compile)]
 [info] Resolving io.netty#netty-all;4.0.29.Final ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@cbf40e2
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@64a30347
 [debug] sbt-chain: module revision found in cache: io.netty#netty-all;4.0.29.Final
 [debug] 	found io.netty#netty-all;4.0.29.Final in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->io.netty#netty-all;4.0.29.Final [compile->runtime]
@@ -956,7 +956,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->io.netty#netty-all;4.0.29.Final [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.spark#spark-network-shuffle_2.11;1.6.1 [compile->default(compile)]
 [info] Resolving org.apache.spark#spark-network-shuffle_2.11;1.6.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@172f99ae
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@217d33eb
 [debug] sbt-chain: module revision found in cache: org.apache.spark#spark-network-shuffle_2.11;1.6.1
 [debug] 	found org.apache.spark#spark-network-shuffle_2.11;1.6.1 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.spark#spark-network-shuffle_2.11;1.6.1 [compile->runtime]
@@ -964,7 +964,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.spark#spark-network-shuffle_2.11;1.6.1 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.fusesource.leveldbjni#leveldbjni-all;1.8 [compile->default(compile)]
 [info] Resolving org.fusesource.leveldbjni#leveldbjni-all;1.8 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3a7ccc3
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@59c3bd6d
 [debug] sbt-chain: module revision found in cache: org.fusesource.leveldbjni#leveldbjni-all;1.8
 [debug] 	found org.fusesource.leveldbjni#leveldbjni-all;1.8 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.fusesource.leveldbjni#leveldbjni-all;1.8 [compile->runtime]
@@ -972,7 +972,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.fusesource.leveldbjni#leveldbjni-all;1.8 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.fasterxml.jackson.core#jackson-databind;2.4.4 [compile->default(compile)]
 [info] Resolving com.fasterxml.jackson.core#jackson-databind;2.4.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@17e795d3
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@323cf4ae
 [debug] sbt-chain: module revision found in cache: com.fasterxml.jackson.core#jackson-databind;2.4.4
 [debug] 	found com.fasterxml.jackson.core#jackson-databind;2.4.4 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.fasterxml.jackson.core#jackson-databind;2.4.4 [compile->runtime]
@@ -980,7 +980,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.fasterxml.jackson.core#jackson-databind;2.4.4 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.fasterxml.jackson.core#jackson-core;2.4.4 [compile->default(compile)]
 [info] Resolving com.fasterxml.jackson.core#jackson-core;2.4.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2f2f8217
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6e481bee
 [debug] sbt-chain: module revision found in cache: com.fasterxml.jackson.core#jackson-core;2.4.4
 [debug] 	found com.fasterxml.jackson.core#jackson-core;2.4.4 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.fasterxml.jackson.core#jackson-core;2.4.4 [compile->runtime]
@@ -988,7 +988,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.fasterxml.jackson.core#jackson-core;2.4.4 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.fasterxml.jackson.core#jackson-annotations;2.4.4 [compile->default(compile)]
 [info] Resolving com.fasterxml.jackson.core#jackson-annotations;2.4.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@14ff3416
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@75acd479
 [debug] sbt-chain: module revision found in cache: com.fasterxml.jackson.core#jackson-annotations;2.4.4
 [debug] 	found com.fasterxml.jackson.core#jackson-annotations;2.4.4 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.fasterxml.jackson.core#jackson-annotations;2.4.4 [compile->runtime]
@@ -996,7 +996,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.fasterxml.jackson.core#jackson-annotations;2.4.4 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.spark#spark-unsafe_2.11;1.6.1 [compile->default(compile)]
 [info] Resolving org.apache.spark#spark-unsafe_2.11;1.6.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7429bbe2
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6182ce62
 [debug] sbt-chain: module revision found in cache: org.apache.spark#spark-unsafe_2.11;1.6.1
 [debug] 	found org.apache.spark#spark-unsafe_2.11;1.6.1 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.spark#spark-unsafe_2.11;1.6.1 [compile->runtime]
@@ -1004,7 +1004,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.spark#spark-unsafe_2.11;1.6.1 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->net.java.dev.jets3t#jets3t;0.7.1 [compile->default(compile)]
 [info] Resolving net.java.dev.jets3t#jets3t;0.7.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@67958095
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6c9d41ee
 [debug] sbt-chain: module revision found in cache: net.java.dev.jets3t#jets3t;0.7.1
 [debug] 	found net.java.dev.jets3t#jets3t;0.7.1 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->net.java.dev.jets3t#jets3t;0.7.1 [compile->runtime]
@@ -1012,7 +1012,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->net.java.dev.jets3t#jets3t;0.7.1 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.curator#curator-recipes;2.4.0 [compile->default(compile)]
 [info] Resolving org.apache.curator#curator-recipes;2.4.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4ab4533d
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@22f3410b
 [debug] sbt-chain: module revision found in cache: org.apache.curator#curator-recipes;2.4.0
 [debug] 	found org.apache.curator#curator-recipes;2.4.0 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.curator#curator-recipes;2.4.0 [compile->runtime]
@@ -1020,7 +1020,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.curator#curator-recipes;2.4.0 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.curator#curator-framework;2.4.0 [compile->default(compile)]
 [info] Resolving org.apache.curator#curator-framework;2.4.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@79d44490
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@33a2573a
 [debug] sbt-chain: module revision found in cache: org.apache.curator#curator-framework;2.4.0
 [debug] 	found org.apache.curator#curator-framework;2.4.0 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.curator#curator-framework;2.4.0 [compile->runtime]
@@ -1028,7 +1028,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.curator#curator-framework;2.4.0 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.curator#curator-client;2.4.0 [compile->default(compile)]
 [info] Resolving org.apache.curator#curator-client;2.4.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@223a8e09
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@546f418a
 [debug] sbt-chain: module revision found in cache: org.apache.curator#curator-client;2.4.0
 [debug] 	found org.apache.curator#curator-client;2.4.0 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.curator#curator-client;2.4.0 [compile->runtime]
@@ -1036,7 +1036,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.curator#curator-client;2.4.0 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.zookeeper#zookeeper;3.4.5 [compile->default(compile)]
 [info] Resolving org.apache.zookeeper#zookeeper;3.4.5 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4753dc6
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@10959e2d
 [debug] sbt-chain: module revision found in cache: org.apache.zookeeper#zookeeper;3.4.5
 [debug] 	found org.apache.zookeeper#zookeeper;3.4.5 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.zookeeper#zookeeper;3.4.5 [compile->runtime]
@@ -1044,7 +1044,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.zookeeper#zookeeper;3.4.5 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->jline#jline;0.9.94 [compile->default(compile)]
 [info] Resolving jline#jline;0.9.94 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3f87b986
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6c522856
 [debug] sbt-chain: module revision found in cache: jline#jline;0.9.94
 [debug] 	found jline#jline;0.9.94 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->jline#jline;0.9.94 [compile->runtime]
@@ -1052,7 +1052,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->jline#jline;0.9.94 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.google.guava#guava;14.0.1 [compile->default(compile)]
 [info] Resolving com.google.guava#guava;14.0.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1b5878aa
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@218da74b
 [debug] sbt-chain: module revision found in cache: com.google.guava#guava;14.0.1
 [debug] 	found com.google.guava#guava;14.0.1 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.google.guava#guava;14.0.1 [compile->runtime]
@@ -1060,7 +1060,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.google.guava#guava;14.0.1 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016 [compile->default(compile)]
 [info] Resolving org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@52277db3
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@44661a54
 [debug] sbt-chain: module revision found in cache: org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016
 [debug] 	found org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016 [compile->runtime]
@@ -1076,7 +1076,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.commons#commons-lang3;3.3.2 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.commons#commons-math3;3.4.1 [compile->default(compile)]
 [info] Resolving org.apache.commons#commons-math3;3.4.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2d736155
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@23f13251
 [debug] sbt-chain: module revision found in cache: org.apache.commons#commons-math3;3.4.1
 [debug] 	found org.apache.commons#commons-math3;3.4.1 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.commons#commons-math3;3.4.1 [compile->runtime]
@@ -1092,7 +1092,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.slf4j#slf4j-api;1.7.10 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.slf4j#jul-to-slf4j;1.7.10 [compile->default(compile)]
 [info] Resolving org.slf4j#jul-to-slf4j;1.7.10 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@732dac2f
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4e282ad
 [debug] sbt-chain: module revision found in cache: org.slf4j#jul-to-slf4j;1.7.10
 [debug] 	found org.slf4j#jul-to-slf4j;1.7.10 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.slf4j#jul-to-slf4j;1.7.10 [compile->runtime]
@@ -1100,7 +1100,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.slf4j#jul-to-slf4j;1.7.10 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.slf4j#jcl-over-slf4j;1.7.10 [compile->default(compile)]
 [info] Resolving org.slf4j#jcl-over-slf4j;1.7.10 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@11bb1c45
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@19ee2749
 [debug] sbt-chain: module revision found in cache: org.slf4j#jcl-over-slf4j;1.7.10
 [debug] 	found org.slf4j#jcl-over-slf4j;1.7.10 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.slf4j#jcl-over-slf4j;1.7.10 [compile->runtime]
@@ -1108,7 +1108,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.slf4j#jcl-over-slf4j;1.7.10 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.slf4j#slf4j-log4j12;1.7.10 [compile->default(compile)]
 [info] Resolving org.slf4j#slf4j-log4j12;1.7.10 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6a0aee38
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2a0be8b2
 [debug] sbt-chain: module revision found in cache: org.slf4j#slf4j-log4j12;1.7.10
 [debug] 	found org.slf4j#slf4j-log4j12;1.7.10 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.slf4j#slf4j-log4j12;1.7.10 [compile->runtime]
@@ -1116,7 +1116,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.slf4j#slf4j-log4j12;1.7.10 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.ning#compress-lzf;1.0.3 [compile->default(compile)]
 [info] Resolving com.ning#compress-lzf;1.0.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@277e78d6
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@773671b8
 [debug] sbt-chain: module revision found in cache: com.ning#compress-lzf;1.0.3
 [debug] 	found com.ning#compress-lzf;1.0.3 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.ning#compress-lzf;1.0.3 [compile->runtime]
@@ -1124,7 +1124,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.ning#compress-lzf;1.0.3 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.xerial.snappy#snappy-java;1.1.2 [compile->default(compile)]
 [info] Resolving org.xerial.snappy#snappy-java;1.1.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3769b3cb
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@109064b5
 [debug] sbt-chain: module revision found in cache: org.xerial.snappy#snappy-java;1.1.2
 [debug] 	found org.xerial.snappy#snappy-java;1.1.2 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.xerial.snappy#snappy-java;1.1.2 [compile->runtime]
@@ -1132,7 +1132,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.xerial.snappy#snappy-java;1.1.2 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->net.jpountz.lz4#lz4;1.3.0 [compile->default(compile)]
 [info] Resolving net.jpountz.lz4#lz4;1.3.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@72064988
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@39a40218
 [debug] sbt-chain: module revision found in cache: net.jpountz.lz4#lz4;1.3.0
 [debug] 	found net.jpountz.lz4#lz4;1.3.0 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->net.jpountz.lz4#lz4;1.3.0 [compile->runtime]
@@ -1140,7 +1140,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->net.jpountz.lz4#lz4;1.3.0 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.roaringbitmap#RoaringBitmap;0.5.11 [compile->default(compile)]
 [info] Resolving org.roaringbitmap#RoaringBitmap;0.5.11 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6d3a44a5
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3ef84bb
 [debug] sbt-chain: module revision found in cache: org.roaringbitmap#RoaringBitmap;0.5.11
 [debug] 	found org.roaringbitmap#RoaringBitmap;0.5.11 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.roaringbitmap#RoaringBitmap;0.5.11 [compile->runtime]
@@ -1148,7 +1148,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.roaringbitmap#RoaringBitmap;0.5.11 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->commons-net#commons-net;2.2 [compile->default(compile)]
 [info] Resolving commons-net#commons-net;2.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@e31bac0
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@57d13baa
 [debug] sbt-chain: module revision found in cache: commons-net#commons-net;2.2
 [debug] 	found commons-net#commons-net;2.2 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->commons-net#commons-net;2.2 [compile->runtime]
@@ -1156,7 +1156,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->commons-net#commons-net;2.2 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.typesafe.akka#akka-remote_2.11;2.3.11 [compile->default(compile)]
 [info] Resolving com.typesafe.akka#akka-remote_2.11;2.3.11 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@12ac639f
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@44810357
 [debug] sbt-chain: module revision found in cache: com.typesafe.akka#akka-remote_2.11;2.3.11
 [debug] 	found com.typesafe.akka#akka-remote_2.11;2.3.11 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.typesafe.akka#akka-remote_2.11;2.3.11 [compile->runtime]
@@ -1164,7 +1164,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.typesafe.akka#akka-remote_2.11;2.3.11 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.3.11 [compile->default(compile)]
 [info] Resolving com.typesafe.akka#akka-actor_2.11;2.3.11 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@34dc8128
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@409a6474
 [debug] sbt-chain: module revision found in cache: com.typesafe.akka#akka-actor_2.11;2.3.11
 [debug] 	found com.typesafe.akka#akka-actor_2.11;2.3.11 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.3.11 [compile->runtime]
@@ -1172,7 +1172,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.3.11 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.typesafe#config;1.2.1 [compile->default(compile)]
 [info] Resolving com.typesafe#config;1.2.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1a9cac23
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@40c196de
 [debug] sbt-chain: module revision found in cache: com.typesafe#config;1.2.1
 [debug] 	found com.typesafe#config;1.2.1 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.typesafe#config;1.2.1 [compile->runtime]
@@ -1180,7 +1180,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.typesafe#config;1.2.1 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->io.netty#netty;3.8.0.Final [compile->default(compile)]
 [info] Resolving io.netty#netty;3.8.0.Final ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3cb43ebe
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@357087d3
 [debug] sbt-chain: module revision found in cache: io.netty#netty;3.8.0.Final
 [debug] 	found io.netty#netty;3.8.0.Final in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->io.netty#netty;3.8.0.Final [compile->runtime]
@@ -1188,7 +1188,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->io.netty#netty;3.8.0.Final [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.uncommons.maths#uncommons-maths;1.2.2a [compile->default(compile)]
 [info] Resolving org.uncommons.maths#uncommons-maths;1.2.2a ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7a8a8ae0
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@60b33b05
 [debug] sbt-chain: module revision found in cache: org.uncommons.maths#uncommons-maths;1.2.2a
 [debug] 	found org.uncommons.maths#uncommons-maths;1.2.2a in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.uncommons.maths#uncommons-maths;1.2.2a [compile->runtime]
@@ -1196,7 +1196,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.uncommons.maths#uncommons-maths;1.2.2a [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.typesafe.akka#akka-slf4j_2.11;2.3.11 [compile->default(compile)]
 [info] Resolving com.typesafe.akka#akka-slf4j_2.11;2.3.11 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1c0171af
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2beb1362
 [debug] sbt-chain: module revision found in cache: com.typesafe.akka#akka-slf4j_2.11;2.3.11
 [debug] 	found com.typesafe.akka#akka-slf4j_2.11;2.3.11 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.typesafe.akka#akka-slf4j_2.11;2.3.11 [compile->runtime]
@@ -1204,7 +1204,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.typesafe.akka#akka-slf4j_2.11;2.3.11 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.json4s#json4s-jackson_2.11;3.2.10 [compile->default(compile)]
 [info] Resolving org.json4s#json4s-jackson_2.11;3.2.10 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@60013435
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1a7f91fd
 [debug] sbt-chain: module revision found in cache: org.json4s#json4s-jackson_2.11;3.2.10
 [debug] 	found org.json4s#json4s-jackson_2.11;3.2.10 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.json4s#json4s-jackson_2.11;3.2.10 [compile->runtime]
@@ -1212,7 +1212,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.json4s#json4s-jackson_2.11;3.2.10 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.sun.jersey#jersey-core;1.9 [compile->default(compile)]
 [info] Resolving com.sun.jersey#jersey-core;1.9 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@76d6205
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3a3b9e32
 [debug] sbt-chain: module revision found in cache: com.sun.jersey#jersey-core;1.9
 [debug] 	found com.sun.jersey#jersey-core;1.9 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.sun.jersey#jersey-core;1.9 [compile->runtime]
@@ -1220,7 +1220,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.sun.jersey#jersey-core;1.9 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.mesos#mesos;0.21.1 [compile->default(compile)]
 [info] Resolving org.apache.mesos#mesos;0.21.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@59adf63c
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@505bd1ac
 [debug] sbt-chain: module revision found in cache: org.apache.mesos#mesos;0.21.1
 [debug] 	found org.apache.mesos#mesos;0.21.1 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.mesos#mesos;0.21.1 [compile->runtime]
@@ -1228,7 +1228,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.mesos#mesos;0.21.1 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.clearspring.analytics#stream;2.7.0 [compile->default(compile)]
 [info] Resolving com.clearspring.analytics#stream;2.7.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@68c1f5fb
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@30235a20
 [debug] sbt-chain: module revision found in cache: com.clearspring.analytics#stream;2.7.0
 [debug] 	found com.clearspring.analytics#stream;2.7.0 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.clearspring.analytics#stream;2.7.0 [compile->runtime]
@@ -1236,7 +1236,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.clearspring.analytics#stream;2.7.0 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->io.dropwizard.metrics#metrics-core;3.1.2 [compile->default(compile)]
 [info] Resolving io.dropwizard.metrics#metrics-core;3.1.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@18c74133
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@62298109
 [debug] sbt-chain: module revision found in cache: io.dropwizard.metrics#metrics-core;3.1.2
 [debug] 	found io.dropwizard.metrics#metrics-core;3.1.2 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->io.dropwizard.metrics#metrics-core;3.1.2 [compile->runtime]
@@ -1244,7 +1244,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->io.dropwizard.metrics#metrics-core;3.1.2 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->io.dropwizard.metrics#metrics-jvm;3.1.2 [compile->default(compile)]
 [info] Resolving io.dropwizard.metrics#metrics-jvm;3.1.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6abe1ccb
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@45af9389
 [debug] sbt-chain: module revision found in cache: io.dropwizard.metrics#metrics-jvm;3.1.2
 [debug] 	found io.dropwizard.metrics#metrics-jvm;3.1.2 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->io.dropwizard.metrics#metrics-jvm;3.1.2 [compile->runtime]
@@ -1252,7 +1252,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->io.dropwizard.metrics#metrics-jvm;3.1.2 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->io.dropwizard.metrics#metrics-json;3.1.2 [compile->default(compile)]
 [info] Resolving io.dropwizard.metrics#metrics-json;3.1.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3da099e3
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3cccd1a3
 [debug] sbt-chain: module revision found in cache: io.dropwizard.metrics#metrics-json;3.1.2
 [debug] 	found io.dropwizard.metrics#metrics-json;3.1.2 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->io.dropwizard.metrics#metrics-json;3.1.2 [compile->runtime]
@@ -1260,7 +1260,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->io.dropwizard.metrics#metrics-json;3.1.2 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->io.dropwizard.metrics#metrics-graphite;3.1.2 [compile->default(compile)]
 [info] Resolving io.dropwizard.metrics#metrics-graphite;3.1.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@379382a1
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4650d80e
 [debug] sbt-chain: module revision found in cache: io.dropwizard.metrics#metrics-graphite;3.1.2
 [debug] 	found io.dropwizard.metrics#metrics-graphite;3.1.2 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->io.dropwizard.metrics#metrics-graphite;3.1.2 [compile->runtime]
@@ -1268,7 +1268,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->io.dropwizard.metrics#metrics-graphite;3.1.2 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.fasterxml.jackson.module#jackson-module-scala_2.11;2.4.4 [compile->default(compile)]
 [info] Resolving com.fasterxml.jackson.module#jackson-module-scala_2.11;2.4.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@38acd25c
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@220d420a
 [debug] sbt-chain: module revision found in cache: com.fasterxml.jackson.module#jackson-module-scala_2.11;2.4.4
 [debug] 	found com.fasterxml.jackson.module#jackson-module-scala_2.11;2.4.4 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.fasterxml.jackson.module#jackson-module-scala_2.11;2.4.4 [compile->runtime]
@@ -1276,7 +1276,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.fasterxml.jackson.module#jackson-module-scala_2.11;2.4.4 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.ivy#ivy;2.4.0 [compile->default(compile)]
 [info] Resolving org.apache.ivy#ivy;2.4.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3bf3e1e7
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@604d5245
 [debug] sbt-chain: module revision found in cache: org.apache.ivy#ivy;2.4.0
 [debug] 	found org.apache.ivy#ivy;2.4.0 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.ivy#ivy;2.4.0 [compile->runtime]
@@ -1284,7 +1284,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.ivy#ivy;2.4.0 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->oro#oro;2.0.8 [compile->default(compile)]
 [info] Resolving oro#oro;2.0.8 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@8604f16
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@532d2a34
 [debug] sbt-chain: module revision found in cache: oro#oro;2.0.8
 [debug] 	found oro#oro;2.0.8 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->oro#oro;2.0.8 [compile->runtime]
@@ -1292,7 +1292,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->oro#oro;2.0.8 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.tachyonproject#tachyon-client;0.8.2 [compile->default(compile)]
 [info] Resolving org.tachyonproject#tachyon-client;0.8.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@28d58d40
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@405af1a5
 [debug] sbt-chain: module revision found in cache: org.tachyonproject#tachyon-client;0.8.2
 [debug] 	found org.tachyonproject#tachyon-client;0.8.2 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.tachyonproject#tachyon-client;0.8.2 [compile->runtime]
@@ -1300,7 +1300,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.tachyonproject#tachyon-client;0.8.2 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->commons-io#commons-io;2.4 [compile->default(compile)]
 [info] Resolving commons-io#commons-io;2.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@605f5baa
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@66141d3f
 [debug] sbt-chain: module revision found in cache: commons-io#commons-io;2.4
 [debug] 	found commons-io#commons-io;2.4 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->commons-io#commons-io;2.4 [compile->runtime]
@@ -1308,7 +1308,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->commons-io#commons-io;2.4 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.tachyonproject#tachyon-underfs-hdfs;0.8.2 [compile->default(compile)]
 [info] Resolving org.tachyonproject#tachyon-underfs-hdfs;0.8.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2a97ae00
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@25792b00
 [debug] sbt-chain: module revision found in cache: org.tachyonproject#tachyon-underfs-hdfs;0.8.2
 [debug] 	found org.tachyonproject#tachyon-underfs-hdfs;0.8.2 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.tachyonproject#tachyon-underfs-hdfs;0.8.2 [compile->runtime]
@@ -1316,7 +1316,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.tachyonproject#tachyon-underfs-hdfs;0.8.2 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.tachyonproject#tachyon-underfs-s3;0.8.2 [compile->default(compile)]
 [info] Resolving org.tachyonproject#tachyon-underfs-s3;0.8.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6b03466b
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3cf9625c
 [debug] sbt-chain: module revision found in cache: org.tachyonproject#tachyon-underfs-s3;0.8.2
 [debug] 	found org.tachyonproject#tachyon-underfs-s3;0.8.2 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.tachyonproject#tachyon-underfs-s3;0.8.2 [compile->runtime]
@@ -1324,7 +1324,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.tachyonproject#tachyon-underfs-s3;0.8.2 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.tachyonproject#tachyon-underfs-local;0.8.2 [compile->default(compile)]
 [info] Resolving org.tachyonproject#tachyon-underfs-local;0.8.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7b512dfb
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3943b33a
 [debug] sbt-chain: module revision found in cache: org.tachyonproject#tachyon-underfs-local;0.8.2
 [debug] 	found org.tachyonproject#tachyon-underfs-local;0.8.2 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.tachyonproject#tachyon-underfs-local;0.8.2 [compile->runtime]
@@ -1332,7 +1332,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.tachyonproject#tachyon-underfs-local;0.8.2 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->net.razorvine#pyrolite;4.9 [compile->default(compile)]
 [info] Resolving net.razorvine#pyrolite;4.9 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4f1633af
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@637dfcc1
 [debug] sbt-chain: module revision found in cache: net.razorvine#pyrolite;4.9
 [debug] 	found net.razorvine#pyrolite;4.9 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->net.razorvine#pyrolite;4.9 [compile->runtime]
@@ -1340,7 +1340,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->net.razorvine#pyrolite;4.9 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->net.sf.py4j#py4j;0.9 [compile->default(compile)]
 [info] Resolving net.sf.py4j#py4j;0.9 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@cf02114
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@568a2300
 [debug] sbt-chain: module revision found in cache: net.sf.py4j#py4j;0.9
 [debug] 	found net.sf.py4j#py4j;0.9 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->net.sf.py4j#py4j;0.9 [compile->runtime]
@@ -1348,7 +1348,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->net.sf.py4j#py4j;0.9 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.spark#spark-graphx_2.11;1.6.1 [compile->default(compile)]
 [info] Resolving org.apache.spark#spark-graphx_2.11;1.6.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@48927d51
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4716313b
 [debug] sbt-chain: module revision found in cache: org.apache.spark#spark-graphx_2.11;1.6.1
 [debug] 	found org.apache.spark#spark-graphx_2.11;1.6.1 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.spark#spark-graphx_2.11;1.6.1 [compile->runtime]
@@ -1356,7 +1356,7 @@
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->org.apache.spark#spark-graphx_2.11;1.6.1 [compile->master]
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.github.fommil.netlib#core;1.1.2 [compile->default(compile)]
 [info] Resolving com.github.fommil.netlib#core;1.1.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@736198e6
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1fd7b073
 [debug] sbt-chain: module revision found in cache: com.github.fommil.netlib#core;1.1.2
 [debug] 	found com.github.fommil.netlib#core;1.1.2 in sbt-chain
 [debug] == resolving dependencies default#carsharing$sources_2.11;1.0->com.github.fommil.netlib#core;1.1.2 [compile->runtime]
@@ -9007,8 +9007,8 @@
 [debug] 	[NOT REQUIRED] io.dropwizard.metrics#metrics-jvm;3.1.2!metrics-jvm.jar(src)
 [debug] 	[NOT REQUIRED] io.dropwizard.metrics#metrics-json;3.1.2!metrics-json.jar
 [debug] 	[NOT REQUIRED] io.dropwizard.metrics#metrics-json;3.1.2!metrics-json.jar(src)
-[debug] 	[NOT REQUIRED] io.dropwizard.metrics#metrics-graphite;3.1.2!metrics-graphite.jar(src)
 [debug] 	[NOT REQUIRED] io.dropwizard.metrics#metrics-graphite;3.1.2!metrics-graphite.jar
+[debug] 	[NOT REQUIRED] io.dropwizard.metrics#metrics-graphite;3.1.2!metrics-graphite.jar(src)
 [debug] 	[NOT REQUIRED] com.fasterxml.jackson.module#jackson-module-scala_2.11;2.4.4!jackson-module-scala_2.11.jar(src)
 [debug] 	[NOT REQUIRED] com.fasterxml.jackson.module#jackson-module-scala_2.11;2.4.4!jackson-module-scala_2.11.jar
 [debug] 	[NOT REQUIRED] org.apache.ivy#ivy;2.4.0!ivy.jar
@@ -9036,7 +9036,7 @@
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-compiler;2.11.8!scala-compiler.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-reflect;2.11.8!scala-reflect.jar(src)
 [debug] 	[NOT REQUIRED] jline#jline;2.12.1!jline.jar(src)
-[debug] :: resolution report :: resolve 41734ms :: artifacts dl 1000ms
+[debug] :: resolution report :: resolve 38507ms :: artifacts dl 337ms
 [warn] 	::::::::::::::::::::::::::::::::::::::::::::::
 [warn] 	::          UNRESOLVED DEPENDENCIES         ::
 [warn] 	::::::::::::::::::::::::::::::::::::::::::::::
@@ -9065,4 +9065,4 @@
 [debug] 	report for default#carsharing$sources_2.11;1.0 docs produced in /Users/AntonioFischetti/IdeaProjects/CarSharing/target/resolution-cache/reports/default-carsharing$sources_2.11-docs.xml
 [debug] 	report for default#carsharing$sources_2.11;1.0 pom produced in /Users/AntonioFischetti/IdeaProjects/CarSharing/target/resolution-cache/reports/default-carsharing$sources_2.11-pom.xml
 [debug] 	report for default#carsharing$sources_2.11;1.0 scala-tool produced in /Users/AntonioFischetti/IdeaProjects/CarSharing/target/resolution-cache/reports/default-carsharing$sources_2.11-scala-tool.xml
-[debug] 	resolve done (41734ms resolve - 1000ms download)
+[debug] 	resolve done (38507ms resolve - 337ms download)

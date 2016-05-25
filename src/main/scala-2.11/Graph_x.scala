@@ -29,12 +29,10 @@ object Graph_x {
 
     val graph = Graph(nodesRDD, relRDD)
 
+  println("NumWay: " + _listObjWay.size + "NumVertex: " + graph.numVertices + " NumEdge: " + graph.numEdges )
+
 **/
 
-
-
-    //println("NumVertex: " + graph.numVertices + " NumEdge: " + graph.numEdges )
-    println("List Way Size: " + _listObjWay.size + " ListVertex: " + _listVertex.size + " ListEdge: " + _listEdge.size )
 
   }
 
@@ -147,13 +145,7 @@ object Graph_x {
 
   }
 
-  def getCouple(listaEl: List[Long]): List[(Long, Long)] = listaEl match {
 
-    case Nil => throw new NoSuchElementException
-    case first  :: Nil => List((first,first))
-    case first  :: tail => (first, first) :: getCouple(first :: tail)
-
-  }
 
 
 } //close object

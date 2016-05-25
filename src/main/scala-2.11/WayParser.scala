@@ -43,7 +43,7 @@ class WayParser() {
     //Oneway
     val osmOneWay = osmTagKey.filter(osmTag => osmTag.key =="oneway")
     val oneWay = osmOneWay.map(osmNameway => osmNameway.value)
-    var _oneWay = ""
+    var _oneWay = "no"
     if(osmOneWay.nonEmpty) _oneWay = oneWay.head
 
     //NameWay

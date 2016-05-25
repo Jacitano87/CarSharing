@@ -2,34 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4277a595-c1a5-46b3-8e87-f35e2aea25d7" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/EdgeProperty.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$main$1$$anonfun$apply$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$main$2$$anonfun$apply$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$main$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/VertexProperty.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/WayParser$$anonfun$_isHighway$2$$anonfun$apply$4$$anonfun$apply$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/WayParser$$anonfun$_isHighway$2$$anonfun$apply$4$$anonfun$apply$5$$anonfun$apply$3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/WayParser$$anonfun$_isHighway$2$$anonfun$apply$4$$anonfun$apply$5$$anonfun$apply$6.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/WayParser$$anonfun$_isHighway$2$$anonfun$apply$4$$anonfun$apply$5.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/WayParser$$anonfun$_isHighway$2$$anonfun$apply$4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/WayParser$$anonfun$getWayParsed$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/WayParser$$anonfun$getWayParsed$2$$anonfun$apply$7.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/WayParser$$anonfun$getWayParsed$2$$anonfun$apply$8$$anonfun$apply$10.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/WayParser$$anonfun$getWayParsed$2$$anonfun$apply$8$$anonfun$apply$9.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/WayParser$$anonfun$getWayParsed$2$$anonfun$apply$8.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/WayParser$$anonfun$getWayParsed$2.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$main$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$main$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/WayParser$$anonfun$_isHighway$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/WayParser$$anonfun$_isHighway$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/WayParser$$anonfun$_isHighway$2$$anonfun$apply$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/WayParser$$anonfun$_isHighway$2$$anonfun$apply$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/WayParser$$anonfun$_isHighway$2.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/WayParser$$anonfun$_isHighway$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/WayParser.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/WayParser.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__io_plasmap_geow_2_11_0_3_11_SNAPSHOT_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__io_plasmap_geow_2_11_0_3_11_SNAPSHOT_jar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hadoop_hadoop_mapreduce_client_app_2_2_0_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hadoop_hadoop_mapreduce_client_app_2_2_0_jar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hadoop_hadoop_mapreduce_client_common_2_2_0_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hadoop_hadoop_mapreduce_client_common_2_2_0_jar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hadoop_hadoop_mapreduce_client_core_2_2_0_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hadoop_hadoop_mapreduce_client_core_2_2_0_jar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hadoop_hadoop_mapreduce_client_jobclient_2_2_0_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hadoop_hadoop_mapreduce_client_jobclient_2_2_0_jar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hadoop_hadoop_mapreduce_client_shuffle_2_2_0_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hadoop_hadoop_mapreduce_client_shuffle_2_2_0_jar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hadoop_hadoop_yarn_api_2_2_0_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hadoop_hadoop_yarn_api_2_2_0_jar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hadoop_hadoop_yarn_client_2_2_0_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hadoop_hadoop_yarn_client_2_2_0_jar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hadoop_hadoop_yarn_common_2_2_0_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hadoop_hadoop_yarn_common_2_2_0_jar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hadoop_hadoop_yarn_server_common_2_2_0_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hadoop_hadoop_yarn_server_common_2_2_0_jar.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/carsharing.iml" afterPath="$PROJECT_DIR$/.idea/modules/carsharing.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala-2.11/Graph_x.scala" afterPath="$PROJECT_DIR$/src/main/scala-2.11/Graph_x.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala-2.11/WayParser.scala" afterPath="$PROJECT_DIR$/src/main/scala-2.11/WayParser.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala-2.11/wayObject.scala" afterPath="$PROJECT_DIR$/src/main/scala-2.11/wayObject.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/default/carsharing$sbt_2.11/1.0/resolved.xml.properties" afterPath="$PROJECT_DIR$/target/resolution-cache/default/carsharing$sbt_2.11/1.0/resolved.xml.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/default/carsharing$sbt_2.11/1.0/resolved.xml.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/default/carsharing$sbt_2.11/1.0/resolved.xml.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/default/carsharing$sources_2.11/1.0/resolved.xml.properties" afterPath="$PROJECT_DIR$/target/resolution-cache/default/carsharing$sources_2.11/1.0/resolved.xml.properties" />
@@ -92,8 +78,20 @@
       <file leaf-file-name="Graph_x.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala-2.11/Graph_x.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+            <state relative-caret-position="214">
+              <caret line="33" column="3" selection-start-line="33" selection-start-column="3" selection-end-line="33" selection-end-column="3" />
+              <folding>
+                <element signature="e#0#34#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Edge.scala" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.ivy2/cache/org.apache.spark/spark-graphx_2.11/srcs/spark-graphx_2.11-1.6.1-sources.jar!/org/apache/spark/graphx/Edge.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -102,8 +100,8 @@
       <file leaf-file-name="WayParser.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala-2.11/WayParser.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+            <state relative-caret-position="240">
+              <caret line="45" column="21" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -174,7 +172,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
+    <option name="x" value="-3" />
+    <option name="y" value="40" />
     <option name="width" value="1280" />
     <option name="height" value="713" />
   </component>
@@ -277,8 +276,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -590,7 +589,7 @@
     </recent_temporary>
   </component>
   <component name="SbtLocalSettings">
-    <option name="lastUpdateTimestamp" value="1464086720061" />
+    <option name="lastUpdateTimestamp" value="1464110172938" />
     <option name="availableProjects">
       <map>
         <entry>
@@ -636,8 +635,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="713" extended-state="0" />
-    <editor active="true" />
+    <frame x="-3" y="40" width="1280" height="713" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -648,15 +647,15 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28739497" sideWeight="0.273021" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23193277" sideWeight="0.726979" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23193277" sideWeight="0.726979" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885906" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22455573" sideWeight="0.35448578" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22455573" sideWeight="0.34792122" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959612" sideWeight="0.4906542" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22455573" sideWeight="0.64551425" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22455573" sideWeight="0.65207875" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39831933" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -730,7 +729,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -786,7 +787,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -842,7 +845,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -922,7 +927,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="28" column="10" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
-          <folding />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -962,7 +969,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="37" column="30" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
-          <folding />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1008,13 +1017,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="186">
           <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.ivy2/cache/org.apache.spark/spark-graphx_2.11/srcs/spark-graphx_2.11-1.6.1-sources.jar!/org/apache/spark/graphx/Edge.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="58" column="7" selection-start-line="58" selection-start-column="7" selection-end-line="58" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -1067,17 +1069,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala-2.11/WayParser.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+        <state relative-caret-position="240">
+          <caret line="45" column="21" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.apache.spark/spark-graphx_2.11/srcs/spark-graphx_2.11-1.6.1-sources.jar!/org/apache/spark/graphx/Edge.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala-2.11/Graph_x.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="214">
+          <caret line="33" column="3" selection-start-line="33" selection-start-column="3" selection-end-line="33" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

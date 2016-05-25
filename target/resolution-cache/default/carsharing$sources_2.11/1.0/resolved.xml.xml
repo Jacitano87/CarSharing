@@ -4,7 +4,7 @@
 		module="carsharing$sources_2.11"
 		revision="1.0"
 		status="integration"
-		publication="20160524124440"
+		publication="20160524191444"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>

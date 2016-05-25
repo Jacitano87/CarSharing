@@ -72,7 +72,7 @@ object Graph_x {
 
     val tmpList = listWay.map(wayObj => wayObj.nodeList.map( idNodo => idNodo))
 
-    val _listNodeWay = tmpList.flatMap(obj=>obj)
+    val _listNodeWay = tmpList.flatMap(obj=>obj).distinct
 
     _listNodeWay.foreach(idNode => _listVertex.+=((idNode,idNode)))
 

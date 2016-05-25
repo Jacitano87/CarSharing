@@ -1,7 +1,5 @@
 import io.plasmap.parser.OsmParser
 import org.apache.spark.graphx._
-import org.apache.spark.rdd.RDD
-import org.apache.spark.{SparkConf, SparkContext}
 /**
   * Created by AntonioFischetti
   */
@@ -11,33 +9,52 @@ object Graph_x {
   def main(args: Array[String]): Unit = {
 
     val pathString = "/Users/AntonioFischetti/desktop/Acireale.osm"
-    //Configurazione Spark
-
-      val config = new SparkConf()
-      config.setMaster("local")
-      config.setAppName("Graph_X")
-      val sc = new SparkContext(config)
 
 
+    val _listObjWay = parserWay(pathString) // ObjectWay
+    val _listVertex = createListNodeWayVertex(_listObjWay) // Vertex (Long:idNodo,Long:idNodo)
 
+    val _listEdge = createListNodeWayEdge(_listObjWay)     // Edge Edge(NodeId:Long,NodeIdDest:Long,idWay:Long)
+    val _listObjNodeWithLatAndLon = parserNode(pathString,_listVertex) //Contain (idNode:Long,Latitude:Long,Longitude:Long) List of nodeObject
 
-    val _listObjWay = parserWay(pathString)
-    val _listVertex = createListNodeWayVertex(_listObjWay)
-    val _listEdge = createListNodeWayEdge(_listObjWay)
+/**
+
+    val config = new SparkConf()
+    config.setMaster("local")
+    config.setAppName("Graph_X")
+    val sc = new SparkContext(config)
 
     val nodesRDD: RDD[(VertexId, Long)] = sc.parallelize(_listVertex)
     val relRDD: RDD[Edge[Long]] = sc.parallelize(_listEdge)
 
-
     val graph = Graph(nodesRDD, relRDD)
 
-    println("NumVertex: " + graph.numVertices + " NumEdge: " + graph.numEdges )
+**/
+
+
+
+    //println("NumVertex: " + graph.numVertices + " NumEdge: " + graph.numEdges )
     println("List Way Size: " + _listObjWay.size + " ListVertex: " + _listVertex.size + " ListEdge: " + _listEdge.size )
 
   }
 
 
+  def parserNode(pathOsm: String , _listNode:List[(Long,Long)]) : List[_nodeObject] = {
 
+    val _listObjNode = scala.collection.mutable.MutableList[_nodeObject]() // List Object Node
+    val parserNode = OsmParser(pathOsm)
+
+    val _nodeParser = new NodeParser()
+
+    parserNode.foreach(
+      node => {
+        if(_nodeParser._isNode(node))
+          if(_nodeParser.getNodeParsed(node,_listNode).idNode != 0 )
+          _listObjNode.+=(_nodeParser.getNodeParsed(node,_listNode))
+      }
+    )
+    _listObjNode.toList
+  }
 
 
 
@@ -49,11 +66,11 @@ object Graph_x {
 
     println("Start Parsing ...")
 
-    val parser = OsmParser(pathOsm)
+    val parserWay = OsmParser(pathOsm)
     val _wayParser = new WayParser()
     val _listObjWayTmp = scala.collection.mutable.MutableList[_wayObject]() // List Object Way
 
-    parser.foreach(
+    parserWay.foreach(
       optionOsmObject => {
         if (_wayParser._isWay(optionOsmObject) && _wayParser._isHighWay(optionOsmObject)){
           _listObjWayTmp.+=(_wayParser._parseObjectWay(optionOsmObject))

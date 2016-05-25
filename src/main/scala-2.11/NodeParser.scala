@@ -1,5 +1,4 @@
 import io.plasmap.model.OsmObject
-
 /**
   * Created by AntonioFischetti on 12/05/16.
   */
@@ -12,25 +11,31 @@ class NodeParser() {
     })
   }
 
-  def getNodeParsed(elementOption: Option[OsmObject]): (String,String,String) = {
+  def getNodeParsed(element: Option[OsmObject] , _listNode:List[(Long,Long)]): _nodeObject = {
 
-    elementOption.fold("","","") {
-      element =>
-          element.nodeOption.fold("","","") {
-            node => {
-             if(node.tags.isEmpty) {
-               (element.id.toString(), node.point.lat.toString(), node.point.lon.toString())
-             }
-              else
-               {
-                 ("","","")
-               }
-              //println("idNodo: " + element.id + " latNodo: " + node.point.lat + " lonNodo: " + node.point.lon)
-            }
 
-          }
 
-    }
+    val osmNode = element.map(osmObj => osmObj.nodeOption.map(osmNode => osmNode)).get
+
+    val idOsmNode = osmNode.map( nodeObj => nodeObj.id.value).get
+
+    var app:(Long,Double,Double) = (0,0,0)
+
+    _listNode.foreach(
+       idNode => {
+
+        if(idOsmNode == idNode._1) {
+          val latitude = osmNode.map(nodeObj => nodeObj.point.lat).get
+          val longitude = osmNode.map(nodeObj => nodeObj.point.lon).get
+         app = (idNode._1,latitude,longitude)
+        }
+       }
+    )
+    _nodeObject(app._1,app._2,app._3)
+
+
+
+
   }
 
 

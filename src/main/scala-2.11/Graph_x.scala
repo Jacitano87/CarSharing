@@ -1,17 +1,21 @@
-import java.util.Calendar
+/**
+  * Created by AntonioFischetti
+  */
+
+import java.io.{FileInputStream, FileOutputStream, ObjectInputStream, ObjectOutputStream}
+import java.nio.file.{Files, Paths}
 
 import io.plasmap.parser.OsmParser
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.graphx._
 import org.apache.spark.rdd.RDD
 import org.apache.spark.{SparkConf, SparkContext}
-/**
-  * Created by AntonioFischetti
-  */
+
 object Graph_x {
 
 
   def main(args: Array[String]): Unit = {
+
 
     val pathString = "/Users/AntonioFischetti/desktop/Acireale.osm"
 
@@ -20,13 +24,14 @@ object Graph_x {
 
     val _listObjWay = parserWay(pathString) // ObjectWay
     val _listVertex = createListNodeWayVertex(_listObjWay) // Vertex (Long:count,Long:idWay)
-
     val _listEdge = createListNodeWayEdge(_listObjWay,_listVertex) // Edge Edge(NodeId:Long,NodeIdDest:Long,idWay:Long)
-
-
      val _listObjNodeWithLatAndLon = parserNode(pathString,_listVertex) //Contain (idNode:Long,Latitude:Long,Longitude:Long) List of nodeObject
-    //_listVertex.map(a=>println(a))
-   // _listEdge.map(a=>println(a))
+
+    //Load Shortest Path From File
+    val _dijkstraObjList = scala.collection.mutable.MutableList[_dijkstraObj]()
+    getPathDijkstraFromFile().foreach(objDjk=>{_dijkstraObjList.+=(objDjk)})
+    //_dijkstraObjList.map(a=>{println(a.idSrc,a.idDst) ; a})
+
 
    val config = new SparkConf()
    config.setMaster("local[2]")
@@ -34,28 +39,25 @@ object Graph_x {
    val sc = new SparkContext(config)
 
 
-
-
-
- val nodesRDD: RDD[(VertexId, Long)] = sc.parallelize(_listVertex)
-
+    val nodesRDD: RDD[(VertexId, Long)] = sc.parallelize(_listVertex)
     val relRDD: RDD[Edge[Long]] = sc.parallelize(_listEdge)
 
+    val graph:Graph[VertexId, Long] = Graph(nodesRDD, relRDD)
 
 
-  val graph:Graph[VertexId, Long] = Graph(nodesRDD, relRDD)
 
-    val src = 318 //Via tomadio
+    val src = 455 //Via tomadio
     val dst = 0
 
-    //val pathDijkstra:(Double,List[Long]) = dijkstra(graph,src,dst)
-    //println("Dijkstra Src: "+ src + " Dst: " + dst + dijkstra(graph,src,dst))
-    val pathDijkstra:List[Long] = List(318, 107, 98, 99, 316, 317, 949, 414, 402, 97, 460, 467, 890, 461, 952, 790, 789, 1004, 787, 785, 865, 2, 3, 1, 0)
-
-    pathDijkstra.intersect(_listVertex)
+   //Eseguire Dijkstra solo se non esiste già il cammino minimo nella lista di path
+ if(_dijkstraObjList.map(djkObj=>djkObj.idSrc).distinct.filter(_==src).toList.isEmpty) {
+   //dijkstra(graph,src,dst).foreach(objDjk => _dijkstraObjList.+=(objDjk))
+   //saveDijkstraPathFile(_dijkstraObjList.toList) //save new list path
+ }
 
 
     println("NumVertex: " + graph.numVertices + " NumEdge: " + graph.numEdges )
+
 
 
 
@@ -189,14 +191,10 @@ _listObjWay.foreach({
 }
 
 
-  def dijkstra(graph: Graph[Long,Long], srcId:Long , destID:Long ) : (Double,List[Long]) = {
+  def dijkstra(graph: Graph[Long,Long], srcId:Long , destId:Long ) : List[_dijkstraObj] = {
 
-    val now = Calendar.getInstance()
-    val currentMinute = now.get(Calendar.MINUTE)
-    val currentSecond = now.get(Calendar.SECOND)
-    val currentMillisecond = now.get(Calendar.MILLISECOND)
 
-    println("Start Dijkstra: " + currentMinute + ":" +currentSecond + ":" + currentMillisecond)
+    println("Start Dijkstra Src,Dst: " + srcId +","+ destId)
 
     val initialGraph : Graph[(Double, List[VertexId]), Long] =
       graph.mapVertices((id, _) =>
@@ -228,15 +226,16 @@ _listObjWay.foreach({
       (a, b) => if (a._1 < b._1) a else b)
 
 
-    val now2 = Calendar.getInstance()
-    val currentMinute2 = now2.get(Calendar.MINUTE)
-    val currentSecond2 = now2.get(Calendar.SECOND)
-    val currentMillisecond2 = now2.get(Calendar.MILLISECOND)
 
-    println("Stop Dijkstra: " + currentMinute2 + ":" +currentSecond2 + ":" + currentMillisecond2)
 
-//println(sssp.vertices.collect.toList.map(a=>{println(a) ; a}))
-   sssp.vertices.collect.toList.filter(_._1 == destID).head._2
+    println("Stop Dijkstra Src,Dst: " + srcId +","+ destId)
+
+    sssp.vertices.collect.toList.map(a => {
+
+      val obj = _dijkstraObj(srcId, a._1, a._2._2, a._2._1.toLong)
+
+      obj
+    })
 
   }
 
@@ -258,6 +257,28 @@ _listObjWay.foreach({
       if (first == end) acc2
       else getWeight(tail,start,end,acc2)
     }
+
+  }
+
+  def getPathDijkstraFromFile(): List[_dijkstraObj] = {
+
+    if ( Files.exists(Paths.get("dijkstra")) ){
+    val ois = new ObjectInputStream(new FileInputStream("dijkstra"))
+
+    val obj = ois.readObject.asInstanceOf[List[_dijkstraObj]]
+    ois.close()
+    obj
+    }
+    else List()
+
+  }
+
+  def saveDijkstraPathFile(listObjDjk:List[_dijkstraObj]): Unit = {
+
+    val oos = new ObjectOutputStream(new FileOutputStream("dijkstra"))
+
+    oos.writeObject(listObjDjk)
+    oos.close()
 
   }
 

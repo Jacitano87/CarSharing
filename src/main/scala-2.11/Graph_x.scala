@@ -8,6 +8,8 @@ import java.nio.file.{Files, Paths}
 import io.plasmap.parser.OsmParser
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.graphx._
+
+
 import org.apache.spark.rdd.RDD
 import org.apache.spark.{SparkConf, SparkContext}
 
@@ -27,10 +29,19 @@ object Graph_x {
     val _listEdge = createListNodeWayEdge(_listObjWay,_listVertex) // Edge Edge(NodeId:Long,NodeIdDest:Long,idWay:Long)
      val _listObjNodeWithLatAndLon = parserNode(pathString,_listVertex) //Contain (idNode:Long,Latitude:Long,Longitude:Long) List of nodeObject
 
+
+
+
+
+    //println(_listVertex)
+    //println(_listEdge)
+
+
+
     //Load Shortest Path From File
     val _dijkstraObjList = scala.collection.mutable.MutableList[_dijkstraObj]()
     getPathDijkstraFromFile().foreach(objDjk=>{_dijkstraObjList.+=(objDjk)})
-    //_dijkstraObjList.map(a=>{println(a.idSrc,a.idDst) ; a})
+   // _dijkstraObjList.map(a=>{println(a.idSrc,a.idDst,a.weight) ; a})
 
 
    val config = new SparkConf()
@@ -44,24 +55,27 @@ object Graph_x {
 
     val graph:Graph[VertexId, Long] = Graph(nodesRDD, relRDD)
 
+    println("NumVertex: " + graph.numVertices + " NumEdge: " + graph.numEdges )
 
+   //  println("Distance: "  + distanceFrom(37.6215537 , 15.1624967 , 37.6135414 , 15.1658417))
 
-    val src = 455 //Via tomadio
-    val dst = 0
+    val src = 4  //Via tomadio
+    val dst = 1016
 
    //Eseguire Dijkstra solo se non esiste già il cammino minimo nella lista di path
  if(_dijkstraObjList.map(djkObj=>djkObj.idSrc).distinct.filter(_==src).toList.isEmpty) {
-   //dijkstra(graph,src,dst).foreach(objDjk => _dijkstraObjList.+=(objDjk))
-   //saveDijkstraPathFile(_dijkstraObjList.toList) //save new list path
+   dijkstra(graph,src,dst).foreach(objDjk => _dijkstraObjList.+=(objDjk))
+   saveDijkstraPathFile(_dijkstraObjList.toList) //save new list path
  }
 
 
-    println("NumVertex: " + graph.numVertices + " NumEdge: " + graph.numEdges )
+
+    maxMatchingWeighted(_listVertex,_listEdge)
 
 
 
 
-
+sc.stop()
   }
 
 
@@ -149,36 +163,95 @@ object Graph_x {
 _listObjWay.foreach({
   _listNodeObj =>
    val intersect = _listNodeObj.nodeList.intersect(_listVertex.map(node=>node._2))
+    val _arraIndices = scala.collection.mutable.MutableList[Int]()
 
-    if(intersect.size > 1 ) {
-      val listSplitted = splitList(intersect)
 
-      for (element <- listSplitted) {
+    _listNodeObj.nodeList.indices.foreach(i => {
+      intersect.foreach( idNode=> {
+         if(idNode ==  _listNodeObj.nodeList(i))
+           _arraIndices.+=(i)
+      })
+    })
 
-        val src = _listVertex.filter(_._2 == element._1).head._1
-        val dst = _listVertex.filter(_._2 == element._2).head._1
+    if (_listNodeObj.oneWay != "yes") {
 
-        val weight = getWeight(_listNodeObj.nodeList, element._1, element._2, 0)
+      if (intersect.size > 1) {
+        val listSplitted = splitList(intersect)
+        val listIndices = splitWeight(_arraIndices.toList)
 
-        _arrayEdge.+=(Edge(src, dst, 1))
+        var counter = 0
+        var weight = 0
+        for (element <- listSplitted) {
 
-      }
-      if (_listNodeObj.oneWay != "yes") {
+          val src = _listVertex.filter(_._2 == element._1).head._1
+          val dst = _listVertex.filter(_._2 == element._2).head._1
+
+          listIndices.indices.foreach(
+            i => {
+              if (i == counter) weight = listIndices(i)
+            })
+
+          _arrayEdge.+=(Edge(src, dst, weight))
+          counter = counter + 1
+          weight = 0
+
+        }
+
         val listSplitted2 = splitList(intersect.reverse)
+        val listIndices2 = splitWeightReverse(_arraIndices.reverse.toList)
+
+        var counter2 = 0
+        var weight2 = 0
 
         for (element2 <- listSplitted2) {
 
           val src2 = _listVertex.filter(_._2 == element2._1).head._1
           val dst2 = _listVertex.filter(_._2 == element2._2).head._1
 
-          val weight2 = getWeight(_listNodeObj.nodeList, element2._1, element2._2, 0)
+          listIndices2.indices.foreach(
+            i => {
+              if (i == counter2) weight2 = listIndices2(i)
+            })
 
-          _arrayEdge.+=(Edge(src2, dst2, 1))
+          _arrayEdge.+=(Edge(src2, dst2, weight2))
+
+          counter2 = counter2 + 1
+          weight2 = 0
+
 
         }
 
+
       }
     }
+    else
+    {
+      if (intersect.size > 1) {
+        val listSplitted = splitList(intersect)
+        val listIndices = splitWeight(_arraIndices.toList)
+
+        var counter = 0
+        var weight = 0
+        for (element <- listSplitted) {
+
+          val src = _listVertex.filter(_._2 == element._1).head._1
+          val dst = _listVertex.filter(_._2 == element._2).head._1
+
+          listIndices.indices.foreach(
+            i => {
+              if (i == counter) weight = listIndices(i)
+            })
+
+          _arrayEdge.+=(Edge(src, dst, weight))
+          counter = counter + 1
+          weight = 0
+
+        }}
+    }
+
+
+
+
 })
 
 
@@ -232,9 +305,17 @@ _listObjWay.foreach({
 
     sssp.vertices.collect.toList.map(a => {
 
-      val obj = _dijkstraObj(srcId, a._1, a._2._2, a._2._1.toLong)
 
-      obj
+      if(a._2._2.isEmpty){
+        val obj = _dijkstraObj(srcId, a._1, a._2._2, -1)
+        obj
+      }
+      else {
+        val obj = _dijkstraObj(srcId, a._1, a._2._2, a._2._1.toLong)
+        obj
+      }
+     //println(obj.idSrc + " " + obj.idDst + " " + obj.weight)
+
     })
 
   }
@@ -247,18 +328,25 @@ _listObjWay.foreach({
 
   }
 
-  def getWeight(listaEl: List[Long], start:Long, end:Long , acc:Int ): Long = listaEl match {
+  def splitWeight(listaEl: List[Int]): List[Int] = listaEl match {
 
     case Nil => throw new NoSuchElementException
-    case first  :: Nil => acc
-    case first  :: tail => {
-      val acc2 = acc + 1
-      if (first == start) getWeight(tail,start,end,0)
-      if (first == end) acc2
-      else getWeight(tail,start,end,acc2)
-    }
+    case first :: Nil => Nil
+    case first :: second :: Nil =>  (second - first) :: splitWeight(second :: Nil)
+    case first :: second :: tail => (second - first) :: splitWeight(second :: tail)
 
   }
+
+  def splitWeightReverse(listaEl: List[Int]): List[Int] = listaEl match {
+
+    case Nil => throw new NoSuchElementException
+    case first :: Nil => Nil
+    case first :: second :: Nil =>  (first - second) :: splitWeightReverse(second :: Nil)
+    case first :: second :: tail => (first - second) :: splitWeightReverse(second :: tail)
+
+  }
+
+
 
   def getPathDijkstraFromFile(): List[_dijkstraObj] = {
 
@@ -281,6 +369,76 @@ _listObjWay.foreach({
     oos.close()
 
   }
+
+
+  def distanceFrom(lat1:Double,lng1: Double,lat2:Double,lng2:Double) : Double = {
+    val R = 6371 // km (change this constant to get miles)
+    val dLat = (lat2-lat1) * Math.PI / 180
+    val dLon = (lng2-lng1) * Math.PI / 180
+    val a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+      Math.cos(lat1 * Math.PI / 180 ) * Math.cos(lat2 * Math.PI / 180 ) *
+        Math.sin(dLon/2) * Math.sin(dLon/2)
+    val c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a))
+    val d = R * c
+    if (d>1) Math.round(d)
+    else if (d<=1) Math.round(d*1000)
+    d
+
+  }
+
+  def maxMatchingWeighted(_listVertex:List[(Long,Long)] , _listEdge:List[Edge[Long]]) : Unit = {
+
+    var _V = scala.collection.mutable.ArrayBuffer[Long]()
+    var _E = scala.collection.mutable.ArrayBuffer[(Long,Long,Long)]()
+    val _T = scala.collection.mutable.ArrayBuffer[(Long,Long)]()
+
+    _listVertex.foreach( idVertex => _V.+=(idVertex._1))
+    _listEdge.foreach( idEdge => _E.+=((idEdge.dstId.toLong,idEdge.srcId.toLong,idEdge.attr.toLong)))
+
+    var maxEdge = -1L
+    var source = -1L
+    var destination = -1L
+
+    var matching = true
+while (matching) {
+
+  _E.foreach(
+    idEdge => {
+      if (idEdge._3 >= maxEdge &&
+        _V.contains(idEdge._1) &&
+        _V.contains(idEdge._2)
+      ) {
+
+        maxEdge = idEdge._3
+        source = idEdge._1
+        destination = idEdge._2
+      }
+      else 0
+    })
+  if (source != -1 && destination != -1) {
+
+    _V -= source
+    _V -= destination
+    _E.-=((source, destination, maxEdge))
+    _T.+=((source, destination))
+
+    source = -1
+    destination = -1
+    maxEdge = -1L
+  }
+  else matching = false
+
+
+}
+    println("Max: " + _T.size)
+
+
+
+
+
+
+  }
+
 
 } //close object
 

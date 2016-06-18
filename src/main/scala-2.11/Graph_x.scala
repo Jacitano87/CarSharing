@@ -66,8 +66,11 @@ object Graph_x {
     println("NumVertex: " + graph.numVertices + " NumEdge: " + graph.numEdges )
 
    //  println("Distance: "  + distanceFrom(37.6215537 , 15.1624967 , 37.6135414 , 15.1658417))
-
-    val src = 14  //Via tomadio
+   val random = scala.util.Random
+// ogni volta che lo avvio mi calcola un dijkstra da un vertex random
+    val src = _listVertex.toList(random.nextInt(_listVertex.size))._1
+    // se voglio evitare il dijkstra
+    // val src = 14   
     val dst = 100
 
    //Eseguire Dijkstra solo se non esiste già il cammino minimo nella lista di path
@@ -76,9 +79,9 @@ object Graph_x {
       saveDijkstraPathFile(_dijkstraObjList.toList) //save new list path
     }
 
-  val randomTrips =  createRandomTrip(5,_listObjNodeWithLatAndLon,_dijkstraObjList.toList,_listEdge,sc,graph)
+  val randomTrips =  createRandomTrip(10,_listObjNodeWithLatAndLon,_dijkstraObjList.toList,_listEdge,sc,graph)
 
-    randomTrips.map(a=>{ println("Start: "+ a.nodeStart + " Dest:" + a.nodeDest) ; a})
+    randomTrips.map(a=>{ println("TripRandom - Start: "+ a.nodeStart + " Dest:" + a.nodeDest) ; a})
 
 
 
@@ -480,7 +483,7 @@ while (matching) {
 
     val random = scala.util.Random
 
-    for( a <-0 to numTrip){
+    for( a <-1 to numTrip){
       //Prendo come partenza un nodo di cui ho già calcolato dijkstra
       val startIntersection = _dijkstraList.toList(random.nextInt(_dijkstraList.size)).idSrc
       val arriveIntersection = random.nextInt(_objNode.size)

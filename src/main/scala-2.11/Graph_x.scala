@@ -7,19 +7,24 @@ import java.nio.file.{Files, Paths}
 
 import io.plasmap.parser.OsmParser
 import org.apache.log4j.{Level, Logger}
+import org.apache.spark.graphx.PartitionStrategy.EdgePartition2D
 import org.apache.spark.graphx._
-
-
 import org.apache.spark.rdd.RDD
 import org.apache.spark.{SparkConf, SparkContext}
+import org.joda.time.{DateTime, Period}
+
+
+
 
 object Graph_x {
+
+
 
 
   def main(args: Array[String]): Unit = {
 
 
-    val pathString = "/Users/AntonioFischetti/desktop/Acireale.osm"
+    val pathString = "Acireale.osm"
 
     Logger.getLogger("org").setLevel(Level.OFF) //Disable console spark
     Logger.getLogger("akka").setLevel(Level.OFF)
@@ -27,9 +32,7 @@ object Graph_x {
     val _listObjWay = parserWay(pathString) // ObjectWay
     val _listVertex = createListNodeWayVertex(_listObjWay) // Vertex (Long:count,Long:idWay)
     val _listEdge = createListNodeWayEdge(_listObjWay,_listVertex) // Edge Edge(NodeId:Long,NodeIdDest:Long,idWay:Long)
-     val _listObjNodeWithLatAndLon = parserNode(pathString,_listVertex) //Contain (idNode:Long,Latitude:Long,Longitude:Long) List of nodeObject
-
-
+    val _listObjNodeWithLatAndLon = parserNode(pathString,_listVertex) //Contain (idNode:Long,Latitude:Long,Longitude:Long) List of nodeObject
 
 
 
@@ -41,7 +44,11 @@ object Graph_x {
     //Load Shortest Path From File
     val _dijkstraObjList = scala.collection.mutable.MutableList[_dijkstraObj]()
     getPathDijkstraFromFile().foreach(objDjk=>{_dijkstraObjList.+=(objDjk)})
-   // _dijkstraObjList.map(a=>{println(a.idSrc,a.idDst,a.weight) ; a})
+
+//    _dijkstraObjList.map(a=>{println(a.idSrc,a.idDst,a.weight) ; a})
+
+
+
 
 
    val config = new SparkConf()
@@ -55,22 +62,31 @@ object Graph_x {
 
     val graph:Graph[VertexId, Long] = Graph(nodesRDD, relRDD)
 
+    graph.partitionBy(EdgePartition2D)
     println("NumVertex: " + graph.numVertices + " NumEdge: " + graph.numEdges )
 
    //  println("Distance: "  + distanceFrom(37.6215537 , 15.1624967 , 37.6135414 , 15.1658417))
 
-    val src = 4  //Via tomadio
-    val dst = 1016
+    val src = 14  //Via tomadio
+    val dst = 100
 
    //Eseguire Dijkstra solo se non esiste già il cammino minimo nella lista di path
  if(_dijkstraObjList.map(djkObj=>djkObj.idSrc).distinct.filter(_==src).toList.isEmpty) {
-   dijkstra(graph,src,dst).foreach(objDjk => _dijkstraObjList.+=(objDjk))
-   saveDijkstraPathFile(_dijkstraObjList.toList) //save new list path
- }
+      dijkstra(sc,graph,src,dst).foreach(objDjk => _dijkstraObjList.+=(objDjk))
+      saveDijkstraPathFile(_dijkstraObjList.toList) //save new list path
+    }
+
+  val randomTrips =  createRandomTrip(5,_listObjNodeWithLatAndLon,_dijkstraObjList.toList,_listEdge,sc,graph)
+
+    randomTrips.map(a=>{ println("Start: "+ a.nodeStart + " Dest:" + a.nodeDest) ; a})
 
 
 
-    maxMatchingWeighted(_listVertex,_listEdge)
+
+
+
+
+    // maxMatchingWeighted(_listVertex,_listEdge)
 
 
 
@@ -88,9 +104,12 @@ sc.stop()
 
     parserNode.foreach(
       node => {
+
         if(_nodeParser._isNode(node))
-          if(_nodeParser.getNodeParsed(node,_listNode).idNode != 0 )
-          _listObjNode.+=(_nodeParser.getNodeParsed(node,_listNode))
+          if(_nodeParser.getNodeParsed(node,_listNode).idNode != 0 ){
+            _listObjNode.+=(_nodeParser.getNodeParsed(node,_listNode))
+          }
+
       }
     )
     _listObjNode.toList
@@ -264,31 +283,26 @@ _listObjWay.foreach({
 }
 
 
-  def dijkstra(graph: Graph[Long,Long], srcId:Long , destId:Long ) : List[_dijkstraObj] = {
-
+  def dijkstra(sc: SparkContext, graph: Graph[Long,Long], srcId:Long , destId:Long ) : List[_dijkstraObj] = {
 
     println("Start Dijkstra Src,Dst: " + srcId +","+ destId)
 
-    val initialGraph : Graph[(Double, List[VertexId]), Long] =
+   val initialGraph : Graph[(Double, List[VertexId]), Long] =
       graph.mapVertices((id, _) =>
         if (id == srcId) (0.0, List[VertexId](srcId))
-        else (Double.PositiveInfinity, List[VertexId]()))
-
+         else (Double.PositiveInfinity, List[VertexId]()))
 
 
     // initialize all vertices except the root to have distance infinity
     val sourceId: VertexId = srcId
-   // val initialGraph : Graph[(Double, List[VertexId]), Long] = graph.mapVertices((id, _) => if (id == sourceId) (0.0, List[VertexId](sourceId)) else (Double.PositiveInfinity, List[VertexId]()))
 
     val sssp = initialGraph.pregel((Double.PositiveInfinity, List[VertexId]()), Int.MaxValue, EdgeDirection.Out)(
       // vertex program
-
       (id, dist, newDist) => if (dist._1 < newDist._1) dist else newDist,
 
       // send message
       triplet => {
         if (triplet.srcAttr._1 < triplet.dstAttr._1 - triplet.attr ) {
-
           Iterator((triplet.dstId, (triplet.srcAttr._1 + triplet.attr , triplet.srcAttr._2 :+ triplet.dstId)))
         } else {
           Iterator.empty
@@ -312,9 +326,10 @@ _listObjWay.foreach({
       }
       else {
         val obj = _dijkstraObj(srcId, a._1, a._2._2, a._2._1.toLong)
+       // println(obj.idSrc + " Dest: " + obj.idDst + " Path:" + obj.path)
         obj
       }
-     //println(obj.idSrc + " " + obj.idDst + " " + obj.weight)
+
 
     })
 
@@ -431,13 +446,89 @@ while (matching) {
 
 }
     println("Max: " + _T.size)
+  }
+
+  def createShareabiltyNerwork(_objTrip :List[_objTrip] , delta:Long) : Unit = {
+/**
+    _objTrip.foreach(
+      objTrip1 =>{
+        _objTrip.foreach(
+          objTrip2 =>{
+                if(objTrip1.idTrip != objTrip2.idTrip)
+                  {
+                    if(objTrip2.startTime <= objTrip1.arrivalTime + delta &&
+                      objTrip1.startTime <= objTrip2.arrivalTime + delta){
+
+                      // i viaggi possono essere condivisi
+                    }
+
+                  }
+
+          })
+
+      })
+
+**/
+  }
 
 
 
 
+  def createRandomTrip(numTrip:Int ,_objNode :List[_nodeObject], _dijkstraList:List[_dijkstraObj], listEdge: List[Edge[(Long)]] , sc: SparkContext, graph: Graph[Long,Long]) : List[_objTrip] = {
 
+    val _tmpList = scala.collection.mutable.MutableList[_objTrip]()
+
+    val random = scala.util.Random
+
+    for( a <-0 to numTrip){
+      //Prendo come partenza un nodo di cui ho già calcolato dijkstra
+      val startIntersection = _dijkstraList.toList(random.nextInt(_dijkstraList.size)).idSrc
+      val arriveIntersection = random.nextInt(_objNode.size)
+
+    //println(_dijkstraList.map(a=>a.idSrc).distinct )
+
+      val objStart = _objNode.filter(p=>p.idVertex == startIntersection)
+      val objArrive = _objNode.filter(p=>p.idVertex == arriveIntersection)
+
+      val tripOne =  _dijkstraList.filter(a=>a.idSrc == startIntersection).filter(p=>p.idDst == arriveIntersection)
+
+      val timePath = getTimeTrip(tripOne.head.idSrc,tripOne.head.idDst,tripOne.head.path,listEdge)
+
+      val tmptime = new DateTime("2016-01-01T10:00:00.000-00:00")
+      val startTime = tmptime.plus(Period.minutes(random.nextInt(180)))
+      val endTime = startTime.plus(Period.minutes(timePath._1.toInt))
+
+      _tmpList.+=(_objTrip(a.toLong,startIntersection,arriveIntersection, objStart.head.latitude,objStart.head.longitude,objArrive.head.latitude,objArrive.head.longitude,startTime,endTime,timePath))
+    }
+
+    _tmpList.toList
 
   }
+
+
+
+//Restituisce per tutte le intersezioni il tempo (1 = 1min)
+  def getTimeTrip(srcId:Long , destId:Long , path:List[Long], listEdge: List[Edge[(Long)]] ) : (Long,List[(Long,Long,Long)]) = {
+
+    var _tmpList = scala.collection.mutable.MutableList[(Long,Long,Long)]()
+    var weightTmp:Long = 0
+
+    path.sliding(2).foreach(
+      idNode => {
+        val link = listEdge.filter(p=>p.srcId == idNode.head).filter(p=>p.dstId == idNode.tail.head)
+        weightTmp = weightTmp + link.head.attr.toLong
+        _tmpList.+=((link.head.srcId.toLong,link.head.dstId.toLong,weightTmp))
+      }
+    )
+  (weightTmp,_tmpList.toList)
+
+  }
+
+  def isSharableTrip(tripOne:_objTrip , tripTwo:_objTrip) : Unit = {
+
+  }
+
+
 
 
 } //close object

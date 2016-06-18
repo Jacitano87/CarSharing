@@ -4,7 +4,7 @@
 		module="carsharing_2.11"
 		revision="1.0"
 		status="integration"
-		publication="20160527122444"
+		publication="20160618124533"
 	>
 		<description>
 		CarSharing
@@ -37,5 +37,7 @@
 		<dependency org="io.plasmap" name="geow_2.11" rev="0.3.11-SNAPSHOT" conf="compile->default(compile)"/>
 		<dependency org="org.apache.spark" name="spark-core_2.11" rev="1.6.1" conf="compile->default(compile)"/>
 		<dependency org="org.apache.spark" name="spark-graphx_2.11" rev="1.6.1" conf="compile->default(compile)"/>
+		<dependency org="joda-time" name="joda-time" rev="2.3" conf="compile->default(compile)"/>
+		<dependency org="com.github.nscala-time" name="nscala-time_2.11" rev="2.12.0" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>

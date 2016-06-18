@@ -19,19 +19,19 @@ class NodeParser() {
 
     val idOsmNode = osmNode.map( nodeObj => nodeObj.id.value).get
 
-    var app:(Long,Double,Double) = (0,0,0)
+    var app:(Long,Long,Double,Double) = (0,0,0,0)
 
     _listNode.foreach(
        idNode => {
 
-        if(idOsmNode == idNode._1) {
+        if(idOsmNode == idNode._2) {
           val latitude = osmNode.map(nodeObj => nodeObj.point.lat).get
           val longitude = osmNode.map(nodeObj => nodeObj.point.lon).get
-         app = (idNode._1,latitude,longitude)
+         app = (idNode._2,idNode._1,latitude,longitude)
         }
        }
     )
-    _nodeObject(app._1,app._2,app._3)
+    _nodeObject(app._1,app._2,app._3,app._4)
 
 
 

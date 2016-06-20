@@ -68,9 +68,9 @@ object Graph_x {
    //  println("Distance: "  + distanceFrom(37.6215537 , 15.1624967 , 37.6135414 , 15.1658417))
    val random = scala.util.Random
 // ogni volta che lo avvio mi calcola un dijkstra da un vertex random
-    val src = _listVertex.toList(random.nextInt(_listVertex.size))._1
+   // val src = _listVertex.toList(random.nextInt(_listVertex.size))._1
     // se voglio evitare il dijkstra
-    // val src = 14   
+     val src = 14
     val dst = 100
 
    //Eseguire Dijkstra solo se non esiste già il cammino minimo nella lista di path
@@ -81,10 +81,10 @@ object Graph_x {
 
   val randomTrips =  createRandomTrip(10,_listObjNodeWithLatAndLon,_dijkstraObjList.toList,_listEdge,sc,graph)
 
-    randomTrips.map(a=>{ println("TripRandom - Start: "+ a.nodeStart + " Dest:" + a.nodeDest) ; a})
+    //randomTrips.map(a=>{ println("Trip S: "+ a.nodeStart + " D: " + a.nodeDest + " Stime: " +a.startTime + " Atime: " +a.arrivalTime + " path: " + a.pathTimed) ; a})
 
 
-
+    isSharableTrip(randomTrips,10,_listEdge,_dijkstraObjList.toList)
 
 
 
@@ -451,27 +451,9 @@ while (matching) {
     println("Max: " + _T.size)
   }
 
-  def createShareabiltyNerwork(_objTrip :List[_objTrip] , delta:Long) : Unit = {
-/**
-    _objTrip.foreach(
-      objTrip1 =>{
-        _objTrip.foreach(
-          objTrip2 =>{
-                if(objTrip1.idTrip != objTrip2.idTrip)
-                  {
-                    if(objTrip2.startTime <= objTrip1.arrivalTime + delta &&
-                      objTrip1.startTime <= objTrip2.arrivalTime + delta){
+  def createShareabiltyNerwork(_objTrip :List[_objTrip] , delta:Long) : Unit =
+  {
 
-                      // i viaggi possono essere condivisi
-                    }
-
-                  }
-
-          })
-
-      })
-
-**/
   }
 
 
@@ -486,7 +468,13 @@ while (matching) {
     for( a <-1 to numTrip){
       //Prendo come partenza un nodo di cui ho già calcolato dijkstra
       val startIntersection = _dijkstraList.toList(random.nextInt(_dijkstraList.size)).idSrc
-      val arriveIntersection = random.nextInt(_objNode.size)
+      var arriveIntersection = _dijkstraList.toList(random.nextInt(_dijkstraList.size)).idSrc
+
+      while(startIntersection == arriveIntersection){
+        arriveIntersection = _dijkstraList.toList(random.nextInt(_dijkstraList.size)).idSrc
+      }
+
+      //  val arriveIntersection = random.nextInt(_objNode.size)
 
     //println(_dijkstraList.map(a=>a.idSrc).distinct )
 
@@ -527,7 +515,67 @@ while (matching) {
 
   }
 
-  def isSharableTrip(tripOne:_objTrip , tripTwo:_objTrip) : Unit = {
+  def isSharableTrip(trips:List[_objTrip] , deltaTime: Long , listEdge: List[Edge[(Long)]] , _dijkstraList:List[_dijkstraObj]) : Unit = {
+
+
+
+    trips.foreach(
+      tripOne => {
+        trips.foreach(
+          tripTwo =>{
+
+            if(tripOne.idTrip != tripTwo.idTrip) {
+              //Suppongo siano due diversi viaggi.
+
+              //Ratti
+              if (tripTwo.startTime.isBefore((tripOne.arrivalTime.plus(deltaTime))) &&
+                tripOne.startTime.isBefore(tripTwo.arrivalTime.plus(deltaTime))
+              )
+              {
+                //controllo se nel path di tripOne c'è il nodoStart del trip 2.
+              val isInTrip = tripOne.pathTimed._2.filter(p => p._1 == tripTwo.nodeStart)
+              if (isInTrip nonEmpty) {
+
+                // controllo se il nodo partenza del secondo viaggio è contenuto nel primo.
+                val tmpTime = tripOne.startTime
+                val addTime = tripOne.pathTimed._2.filter(p => p._2 == tripTwo.nodeStart)
+
+                var timeActualeTripOne = tmpTime
+                val timeStartTripTwo = tripTwo.startTime
+
+                if (addTime nonEmpty) {
+
+                  timeActualeTripOne = tmpTime.plus(addTime.head._3)
+                }
+
+                val differenceTime = timeActualeTripOne.getMinuteOfDay - timeStartTripTwo.getMinuteOfDay
+
+                //Se la differenza è minore del valore delta impostato allora è possibile condividerle
+                if (differenceTime.abs <= deltaTime) {
+                  println("Trip1 S: " + tripOne.nodeStart + " D: " + tripOne.nodeDest + " Stime: " + tripOne.startTime + " Atime: " + tripOne.arrivalTime + " path: " + tripOne.pathTimed)
+                  println("Trip2 S: " + tripTwo.nodeStart + " D: " + tripTwo.nodeDest + " Stime: " + tripTwo.startTime + " Atime: " + tripTwo.arrivalTime + " path: " + tripTwo.pathTimed)
+
+                  println("ActualTimeT1: " + timeActualeTripOne + " timeStartTripTwo: " + timeStartTripTwo)
+                  println("Difference Trip1: " + tripOne.nodeStart + " Trip2: " + tripTwo.nodeStart + " -> " + differenceTime.abs)
+
+                  val tripTwoDestination =  _dijkstraList.filter(a=>a.idSrc == tripOne.nodeDest).filter(p=>p.idDst == tripTwo.nodeDest)
+                  val tripTwoDestinationTimePath = getTimeTrip(tripTwoDestination.head.idSrc,tripTwoDestination.head.idDst,tripTwoDestination.head.path,listEdge)
+
+                  println("Path from: " + tripTwoDestinationTimePath)
+                  if(tripTwoDestinationTimePath._1 <= deltaTime){
+
+                    println("Condivisibile")
+                  }
+
+                }
+
+              }
+            }
+          }
+          })
+
+      })
+
 
   }
 

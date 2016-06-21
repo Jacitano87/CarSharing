@@ -79,12 +79,12 @@ object Graph_x {
       saveDijkstraPathFile(_dijkstraObjList.toList) //save new list path
     }
 
-  val randomTrips =  createRandomTrip(100,_listObjNodeWithLatAndLon,_dijkstraObjList.toList,_listEdge,sc,graph)
+  val randomTrips =  createRandomTrip(1000,_listObjNodeWithLatAndLon,_dijkstraObjList.toList,_listEdge,sc,graph)
 
     //randomTrips.map(a=>{ println("Trip S: "+ a.nodeStart + " D: " + a.nodeDest + " Stime: " +a.startTime + " Atime: " +a.arrivalTime + " path: " + a.pathTimed) ; a})
 
 
-    isSharableTrip(randomTrips,10,_listEdge,_dijkstraObjList.toList)
+    createShareabilityNetwork(randomTrips,5,10,_listEdge,_dijkstraObjList.toList)
 
 
 
@@ -448,13 +448,10 @@ while (matching) {
 
 
 }
-    println("Max: " + _T.size)
+    println("MaxMatching: " + _T.size)
   }
 
-  def createShareabiltyNerwork(_objTrip :List[_objTrip] , delta:Long) : Unit =
-  {
 
-  }
 
 
 
@@ -519,10 +516,10 @@ if(path.size > 1) {
 }
   }
 
-  def isSharableTrip(trips:List[_objTrip] , deltaTime: Long , listEdge: List[Edge[(Long)]] , _dijkstraList:List[_dijkstraObj]) : Unit = {
+  def createShareabilityNetwork(trips:List[_objTrip] , waithTime: Long , deltaTime: Long , listEdge: List[Edge[(Long)]] , _dijkstraList:List[_dijkstraObj]) : Unit = {
 
-
-
+    val _nodeShareability = scala.collection.mutable.MutableList[(Long,Long)]()
+    val _edgeShareability = scala.collection.mutable.MutableList[Edge[(Long)]]()
     trips.foreach(
       tripOne => {
         trips.foreach(
@@ -532,8 +529,8 @@ if(path.size > 1) {
               //Suppongo siano due diversi viaggi.
 
               //Ratti
-              if (tripTwo.startTime.isBefore((tripOne.arrivalTime.plus(deltaTime))) &&
-                tripOne.startTime.isBefore(tripTwo.arrivalTime.plus(deltaTime))
+              if (tripTwo.startTime.isBefore((tripOne.arrivalTime.plus(waithTime))) &&
+                tripOne.startTime.isBefore(tripTwo.arrivalTime.plus(waithTime))
               )
               {
                 //controllo se nel path di tripOne c'è il nodoStart del trip 2.
@@ -574,14 +571,29 @@ if(path.size > 1) {
 
                       if(timeBetwDestTripOneAndTripTwo._1 <= deltaTime || timeBetwDestTripTwoAndTripOne._1 <= deltaTime){
 
-                        println("Trip1 S: " + tripOne.nodeStart + " D: " + tripOne.nodeDest + " Stime: " + tripOne.startTime + " Atime: " + tripOne.arrivalTime + " path: " + tripOne.pathTimed)
-                        println("Trip2 S: " + tripTwo.nodeStart + " D: " + tripTwo.nodeDest + " Stime: " + tripTwo.startTime + " Atime: " + tripTwo.arrivalTime + " path: " + tripTwo.pathTimed)
-                        println("ActualTimeT1: " + timeActualeTripOne + " timeStartTripTwo: " + timeStartTripTwo)
-                        println("Difference Trip1: " + tripOne.nodeStart + " Trip2: " + tripTwo.nodeStart + " -> " + differenceTime.abs)
-                        //println("Path One-Two from: " + timeBetwDestTripOneAndTripTwo._1)
-                        //println("Path Two-One from: " + timeBetwDestTripOneAndTripTwo._1)
+                        var bestRoute = 0L
+                        //Sommo path destinazioni
+                        if(timeBetwDestTripOneAndTripTwo._1 <= timeBetwDestTripTwoAndTripOne._1) bestRoute = tripOne.pathTimed._1 + timeBetwDestTripOneAndTripTwo._1
+                        else bestRoute = tripTwo.pathTimed._1 + timeBetwDestTripTwoAndTripOne._1
 
-                      println("Condivisibile")
+                        if(bestRoute <= tripOne.pathTimed._1 + tripTwo.pathTimed._1 )
+                          {
+                            val weigth = tripOne.pathTimed._1 + tripTwo.pathTimed._1
+                            //println("TotalPath: " + bestRoute + " Sum: " + sum )
+                            //println("Trip1 S: " + tripOne.nodeStart + " D: " + tripOne.nodeDest + " Stime: " + tripOne.startTime + " Atime: " + tripOne.arrivalTime + " path: " + tripOne.pathTimed)
+                            //println("Trip2 S: " + tripTwo.nodeStart + " D: " + tripTwo.nodeDest + " Stime: " + tripTwo.startTime + " Atime: " + tripTwo.arrivalTime + " path: " + tripTwo.pathTimed)
+                            //println("ActualTimeT1: " + timeActualeTripOne + " timeStartTripTwo: " + timeStartTripTwo)
+                            //println("Difference Trip1: " + tripOne.nodeStart + " Trip2: " + tripTwo.nodeStart + " -> " + differenceTime.abs)
+
+
+                            _nodeShareability.+=((tripOne.idTrip,tripOne.idTrip))
+                            _edgeShareability.+=(Edge( tripOne.idTrip,tripTwo.idTrip,weigth))
+
+                           // println("Condivisibile: " + tripOne.idTrip + " & " + tripTwo.idTrip + " Weight: " + weigth)
+
+                          }
+
+
 
  }
 
@@ -599,6 +611,8 @@ if(path.size > 1) {
 
       })
 
+   val _vertexDistinct = _nodeShareability.distinct
+    maxMatchingWeighted(_vertexDistinct.toList,_edgeShareability.toList)
 
   }
 

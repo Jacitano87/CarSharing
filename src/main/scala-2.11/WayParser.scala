@@ -20,10 +20,13 @@ class WayParser() {
 
     if(typeHighway.nonEmpty){
       if (typeHighway.head == "primary" || typeHighway.head == "secondary" ||
-        typeHighway.head == "tertiary" || typeHighway.head == "unclassified" ||
-        typeHighway.head == "road" || typeHighway.head == "livingstreet" || typeHighway.head == "residential")
+        typeHighway.head == "tertiary" || typeHighway.head == "residential" || typeHighway.head == "unclassified"
+          ||typeHighway.head == "road" || typeHighway.head == "livingstreet" || typeHighway.head == "unclassified")
       {
-        true
+      //  val osmListNodeId = element.map(osmObj => osmObj.wayOption.map(osmWay => osmWay.nds.map(osmId => osmId.value))).get.get
+      //  if(osmListNodeId.size > 2) true
+      //  else false
+      true
       }
       else false
     }

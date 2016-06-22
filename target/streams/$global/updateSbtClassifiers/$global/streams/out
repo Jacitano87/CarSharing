@@ -1,6 +1,7 @@
 [debug] Other repositories:
 [debug] Default repositories:
 [debug] Using inline dependencies specified in Scala.
+[debug] no default cache defined: set to /Users/AntonioFischetti/.ivy2/cache
 [debug] :: resolving dependencies :: default#carsharing$sbt_2.11;1.0
 [debug] 	confs: [default]
 [debug] 	validate = true
@@ -10,7 +11,6 @@
 [debug] == resolving dependencies default#carsharing$sbt_2.11;1.0->org.scala-sbt#sbt;0.13.8 [default->default(compile)]
 [info] Resolving org.scala-sbt#sbt;0.13.8 ...
 [debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#sbt;0.13.8 {default=[default(compile)]}
-[debug] no default cache defined: set to /Users/AntonioFischetti/.ivy2/cache
 [debug] sbt-chain: module revision found in cache: org.scala-sbt#sbt;0.13.8
 [debug] 	found org.scala-sbt#sbt;0.13.8 in sbt-chain
 [debug] == resolving dependencies org.scala-sbt#sbt;0.13.8->org.scala-lang#scala-library;2.10.4 [compile->default(compile)]
@@ -704,9 +704,9 @@
 [debug] 	[NOT REQUIRED] org.scala-sbt#test-agent;0.13.8!test-agent.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#test-interface;1.0!test-interface.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.8!apply-macro.jar
-[debug] :: resolution report :: resolve 7916ms :: artifacts dl 314ms
+[debug] :: resolution report :: resolve 7562ms :: artifacts dl 413ms
 [debug] 	report for default#carsharing$sbt_2.11;1.0 default produced in /Users/AntonioFischetti/IdeaProjects/CarSharing/target/resolution-cache/reports/default-carsharing$sbt_2.11-default.xml
-[debug] 	resolve done (7916ms resolve - 314ms download)
+[debug] 	resolve done (7562ms resolve - 413ms download)
 [debug] Using inline dependencies specified in Scala.
 [debug] :: resolving dependencies :: default#carsharing$sources_2.11;1.0
 [debug] 	confs: [default]
@@ -1070,6 +1070,6 @@
 [debug] 	[NOT REQUIRED] org.scala-sbt#precompiled-2_8_2;0.13.8!precompiled-2_8_2.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-sbt#precompiled-2_9_2;0.13.8!precompiled-2_9_2.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-sbt#precompiled-2_9_3;0.13.8!precompiled-2_9_3.jar(src)
-[debug] :: resolution report :: resolve 1382ms :: artifacts dl 189ms
+[debug] :: resolution report :: resolve 1257ms :: artifacts dl 219ms
 [debug] 	report for default#carsharing$sources_2.11;1.0 default produced in /Users/AntonioFischetti/IdeaProjects/CarSharing/target/resolution-cache/reports/default-carsharing$sources_2.11-default.xml
-[debug] 	resolve done (1382ms resolve - 189ms download)
+[debug] 	resolve done (1257ms resolve - 219ms download)

@@ -2,7 +2,108 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4277a595-c1a5-46b3-8e87-f35e2aea25d7" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$createListNodeWayEdge$1$$anonfun$apply$1$$anonfun$apply$mcVI$sp$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$main$4.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dijkstra" afterPath="$PROJECT_DIR$/dijkstra" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/EdgeProperty.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/EdgeProperty.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$10.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$10.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$11.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$11.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$8.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$8.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$9.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$9.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$createListNodeWayEdge$1$$anonfun$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$createListNodeWayEdge$1$$anonfun$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$createListNodeWayEdge$1$$anonfun$apply$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$createListNodeWayEdge$1$$anonfun$apply$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$createListNodeWayEdge$1$$anonfun$apply$7$$anonfun$2.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$createListNodeWayEdge$1$$anonfun$apply$7$$anonfun$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$createListNodeWayEdge$1$$anonfun$apply$7$$anonfun$3.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$createListNodeWayEdge$1$$anonfun$apply$7$$anonfun$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$createListNodeWayEdge$1$$anonfun$apply$7$$anonfun$apply$2.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$createListNodeWayEdge$1$$anonfun$apply$7$$anonfun$apply$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$createListNodeWayEdge$1$$anonfun$apply$7.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$createListNodeWayEdge$1$$anonfun$apply$7.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$createListNodeWayEdge$1$$anonfun$apply$8$$anonfun$4.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$createListNodeWayEdge$1$$anonfun$apply$8$$anonfun$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$createListNodeWayEdge$1$$anonfun$apply$8$$anonfun$5.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$createListNodeWayEdge$1$$anonfun$apply$8$$anonfun$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$createListNodeWayEdge$1$$anonfun$apply$8$$anonfun$apply$3.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$createListNodeWayEdge$1$$anonfun$apply$8$$anonfun$apply$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$createListNodeWayEdge$1$$anonfun$apply$8.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$createListNodeWayEdge$1$$anonfun$apply$8.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$createListNodeWayEdge$1$$anonfun$apply$9$$anonfun$6.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$createListNodeWayEdge$1$$anonfun$apply$9$$anonfun$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$createListNodeWayEdge$1$$anonfun$apply$9$$anonfun$7.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$createListNodeWayEdge$1$$anonfun$apply$9$$anonfun$7.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$createListNodeWayEdge$1$$anonfun$apply$9$$anonfun$apply$4.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$createListNodeWayEdge$1$$anonfun$apply$9$$anonfun$apply$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$createListNodeWayEdge$1$$anonfun$apply$9.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$createListNodeWayEdge$1$$anonfun$apply$9.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$createListNodeWayEdge$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$createListNodeWayEdge$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$createListNodeWayVertex$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$createListNodeWayVertex$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$createListNodeWayVertex$2$$anonfun$apply$5$$anonfun$apply$6.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$createListNodeWayVertex$2$$anonfun$apply$5$$anonfun$apply$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$createListNodeWayVertex$2$$anonfun$apply$5.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$createListNodeWayVertex$2$$anonfun$apply$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$createListNodeWayVertex$2.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$createListNodeWayVertex$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$createRandomTrip$1$$anonfun$12.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$createRandomTrip$1$$anonfun$12.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$createRandomTrip$1$$anonfun$13.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$createRandomTrip$1$$anonfun$13.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$createRandomTrip$1$$anonfun$14.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$createRandomTrip$1$$anonfun$14.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$createRandomTrip$1$$anonfun$15.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$createRandomTrip$1$$anonfun$15.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$createRandomTrip$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$createRandomTrip$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$createShareabilityNetwork$1$$anonfun$apply$10$$anonfun$18.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$createShareabilityNetwork$1$$anonfun$apply$10$$anonfun$18.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$createShareabilityNetwork$1$$anonfun$apply$10$$anonfun$19.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$createShareabilityNetwork$1$$anonfun$apply$10$$anonfun$19.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$createShareabilityNetwork$1$$anonfun$apply$10$$anonfun$20.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$createShareabilityNetwork$1$$anonfun$apply$10$$anonfun$20.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$createShareabilityNetwork$1$$anonfun$apply$10$$anonfun$21.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$createShareabilityNetwork$1$$anonfun$apply$10$$anonfun$21.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$createShareabilityNetwork$1$$anonfun$apply$10$$anonfun$22.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$createShareabilityNetwork$1$$anonfun$apply$10$$anonfun$22.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$createShareabilityNetwork$1$$anonfun$apply$10$$anonfun$23.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$createShareabilityNetwork$1$$anonfun$apply$10$$anonfun$23.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$createShareabilityNetwork$1$$anonfun$apply$10.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$createShareabilityNetwork$1$$anonfun$apply$10.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$createShareabilityNetwork$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$createShareabilityNetwork$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$dijkstra$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$dijkstra$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$getTimeTrip$1$$anonfun$16.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$getTimeTrip$1$$anonfun$16.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$getTimeTrip$1$$anonfun$17.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$getTimeTrip$1$$anonfun$17.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$getTimeTrip$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$getTimeTrip$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$main$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$main$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$main$2.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$main$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$main$3.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$main$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$maxMatchingWeighted$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$maxMatchingWeighted$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$maxMatchingWeighted$2.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$maxMatchingWeighted$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$maxMatchingWeighted$3.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$maxMatchingWeighted$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$parserNode$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$parserNode$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$parserWay$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$$anonfun$parserWay$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Graph_x$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/VertexProperty.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/VertexProperty.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/WayParser$$anonfun$10.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/WayParser$$anonfun$10.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/WayParser$$anonfun$11$$anonfun$apply$5$$anonfun$apply$6.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/WayParser$$anonfun$11$$anonfun$apply$5$$anonfun$apply$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/WayParser$$anonfun$11$$anonfun$apply$5.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/WayParser$$anonfun$11$$anonfun$apply$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/WayParser$$anonfun$11.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/WayParser$$anonfun$11.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/WayParser$$anonfun$12.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/WayParser$$anonfun$12.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/WayParser$$anonfun$4$$anonfun$apply$3$$anonfun$apply$4.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/WayParser$$anonfun$4$$anonfun$apply$3$$anonfun$apply$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/WayParser$$anonfun$4$$anonfun$apply$3.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/WayParser$$anonfun$4$$anonfun$apply$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/WayParser$$anonfun$4.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/WayParser$$anonfun$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/WayParser$$anonfun$5.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/WayParser$$anonfun$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/WayParser$$anonfun$6.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/WayParser$$anonfun$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/WayParser$$anonfun$7.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/WayParser$$anonfun$7.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/WayParser$$anonfun$8.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/WayParser$$anonfun$8.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/WayParser$$anonfun$9.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/WayParser$$anonfun$9.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/WayParser.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/WayParser.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.11/output_dsp" afterPath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.11/output_dsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__io_plasmap_geow_2_11_0_3_11_SNAPSHOT_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__io_plasmap_geow_2_11_0_3_11_SNAPSHOT_jar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hadoop_hadoop_mapreduce_client_app_2_2_0_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hadoop_hadoop_mapreduce_client_app_2_2_0_jar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hadoop_hadoop_mapreduce_client_common_2_2_0_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hadoop_hadoop_mapreduce_client_common_2_2_0_jar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hadoop_hadoop_mapreduce_client_core_2_2_0_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hadoop_hadoop_mapreduce_client_core_2_2_0_jar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hadoop_hadoop_mapreduce_client_jobclient_2_2_0_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hadoop_hadoop_mapreduce_client_jobclient_2_2_0_jar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hadoop_hadoop_mapreduce_client_shuffle_2_2_0_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hadoop_hadoop_mapreduce_client_shuffle_2_2_0_jar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hadoop_hadoop_yarn_api_2_2_0_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hadoop_hadoop_yarn_api_2_2_0_jar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hadoop_hadoop_yarn_client_2_2_0_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hadoop_hadoop_yarn_client_2_2_0_jar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hadoop_hadoop_yarn_common_2_2_0_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hadoop_hadoop_yarn_common_2_2_0_jar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hadoop_hadoop_yarn_server_common_2_2_0_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hadoop_hadoop_yarn_server_common_2_2_0_jar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala-2.11/Graph_x.scala" afterPath="$PROJECT_DIR$/src/main/scala-2.11/Graph_x.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala-2.11/WayParser.scala" afterPath="$PROJECT_DIR$/src/main/scala-2.11/WayParser.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/default/carsharing$sbt_2.11/1.0/resolved.xml.properties" afterPath="$PROJECT_DIR$/target/resolution-cache/default/carsharing$sbt_2.11/1.0/resolved.xml.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/default/carsharing$sbt_2.11/1.0/resolved.xml.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/default/carsharing$sbt_2.11/1.0/resolved.xml.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/default/carsharing$sources_2.11/1.0/resolved.xml.properties" afterPath="$PROJECT_DIR$/target/resolution-cache/default/carsharing$sources_2.11/1.0/resolved.xml.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/default/carsharing$sources_2.11/1.0/resolved.xml.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/default/carsharing$sources_2.11/1.0/resolved.xml.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-carsharing$sbt_2.11-default.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-carsharing$sbt_2.11-default.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-carsharing$sources_2.11-compile-internal.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-carsharing$sources_2.11-compile-internal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-carsharing$sources_2.11-compile.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-carsharing$sources_2.11-compile.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-carsharing$sources_2.11-docs.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-carsharing$sources_2.11-docs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-carsharing$sources_2.11-optional.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-carsharing$sources_2.11-optional.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-carsharing$sources_2.11-plugin.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-carsharing$sources_2.11-plugin.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-carsharing$sources_2.11-pom.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-carsharing$sources_2.11-pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-carsharing$sources_2.11-provided.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-carsharing$sources_2.11-provided.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-carsharing$sources_2.11-runtime-internal.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-carsharing$sources_2.11-runtime-internal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-carsharing$sources_2.11-runtime.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-carsharing$sources_2.11-runtime.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-carsharing$sources_2.11-scala-tool.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-carsharing$sources_2.11-scala-tool.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-carsharing$sources_2.11-sources.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-carsharing$sources_2.11-sources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-carsharing$sources_2.11-test-internal.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-carsharing$sources_2.11-test-internal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-carsharing$sources_2.11-test.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-carsharing$sources_2.11-test.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/updateClassifiers/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/$global/updateClassifiers/$global/streams/out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/updateSbtClassifiers/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/$global/updateSbtClassifiers/$global/streams/out" />
     </list>
     <ignored path="CarSharing.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,52 +143,12 @@
       <file leaf-file-name="Graph_x.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala-2.11/Graph_x.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="450" column="38" selection-start-line="450" selection-start-column="38" selection-end-line="450" selection-end-column="38" />
+            <state relative-caret-position="193">
+              <caret line="292" column="81" selection-start-line="292" selection-start-column="81" selection-end-line="292" selection-end-column="81" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#42#131#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="wayObject.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala-2.11/wayObject.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="16" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dijkstraObj.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala-2.11/dijkstraObj.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="82" selection-start-line="5" selection-start-column="82" selection-end-line="5" selection-end-column="82" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="nodeObject.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala-2.11/nodeObject.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="objTrip.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala-2.11/objTrip.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -115,7 +176,6 @@
         <option value="$PROJECT_DIR$/src/main/scala-2.11/WayNode.scala" />
         <option value="$PROJECT_DIR$/src/main/scala-2.11/RelationClass.scala" />
         <option value="$PROJECT_DIR$/src/main/scala-2.11/wayObject.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala-2.11/WayParser.scala" />
         <option value="$PROJECT_DIR$/src/main/scala-2.11/Dijkstra.scala" />
         <option value="$PROJECT_DIR$/src/main/scala-2.11/dijkstraObj.scala" />
         <option value="$PROJECT_DIR$/src/main/java/edmondsJKarp.java" />
@@ -123,14 +183,17 @@
         <option value="$PROJECT_DIR$/src/main/scala-2.11/NodeParser.scala" />
         <option value="$PROJECT_DIR$/build.sbt" />
         <option value="$PROJECT_DIR$/src/main/scala-2.11/objTrip.scala" />
+        <option value="$APPLICATION_CONFIG_DIR$/idea.vmoptions" />
+        <option value="$PROJECT_DIR$/src/main/scala-2.11/WayParser.scala" />
         <option value="$PROJECT_DIR$/src/main/scala-2.11/Graph_x.scala" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="26" />
-    <option name="width" value="1280" />
-    <option name="height" value="700" />
+    <option name="x" value="24" />
+    <option name="y" value="23" />
+    <option name="width" value="1239" />
+    <option name="height" value="695" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -157,9 +220,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -266,6 +328,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -579,7 +642,7 @@
     </recent_temporary>
   </component>
   <component name="SbtLocalSettings">
-    <option name="lastUpdateTimestamp" value="1466494247225" />
+    <option name="lastUpdateTimestamp" value="1466614886794" />
     <option name="availableProjects">
       <map>
         <entry>
@@ -624,28 +687,37 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="26" width="1280" height="700" extended-state="0" />
-    <editor active="false" />
+    <frame x="24" y="23" width="1239" height="695" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41580757" sideWeight="0.49434572" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928944" sideWeight="0.49707603" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40901214" sideWeight="0.4319131" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="SBT" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3539519" sideWeight="0.21486267" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35181975" sideWeight="0.33333334" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3539519" sideWeight="0.7851373" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885906" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928944" sideWeight="0.49707603" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.83362216" sideWeight="0.6666667" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3275563" sideWeight="0.49707603" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22213247" sideWeight="0.67287236" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15705931" sideWeight="0.38541666" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959612" sideWeight="0.4906542" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22213247" sideWeight="0.32712767" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15705931" sideWeight="0.6145833" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3967213" sideWeight="0.6163166" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -668,7 +740,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -677,31 +749,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/scala-2.11/Graph_x.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#42#131#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala-2.11/WayParser.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="68" column="46" selection-start-line="68" selection-start-column="46" selection-end-line="68" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala-2.11/NodeParser.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala-2.11/RelationClass.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -713,7 +760,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -721,7 +767,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -775,7 +820,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -862,13 +906,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala-2.11/Dijkstra.scala" />
-    <entry file="jar://$USER_HOME$/.ivy2/cache/org.apache.spark/spark-graphx_2.11/srcs/spark-graphx_2.11-1.6.1-sources.jar!/org/apache/spark/graphx/Pregel.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-799">
-          <caret line="55" column="7" selection-start-line="55" selection-start-column="7" selection-end-line="55" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Graph.java" />
     <entry file="jar://$USER_HOME$/.ivy2/cache/org.apache.spark/spark-graphx_2.11/srcs/spark-graphx_2.11-1.6.1-sources.jar!/org/apache/spark/graphx/lib/ShortestPaths.scala">
       <provider selected="true" editor-type-id="text-editor">
@@ -933,13 +970,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.ivy2/cache/org.apache.spark/spark-graphx_2.11/srcs/spark-graphx_2.11-1.6.1-sources.jar!/org/apache/spark/graphx/GraphOps.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77">
-          <caret line="232" column="46" selection-start-line="232" selection-start-column="46" selection-end-line="232" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.ivy2/cache/org.apache.spark/spark-graphx_2.11/srcs/spark-graphx_2.11-1.6.1-sources.jar!/org/apache/spark/graphx/Graph.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="277">
@@ -962,24 +992,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edmondsJKarp.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/scala-2.11/WayParser.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala-2.11/NodeParser.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.sbt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -990,38 +1006,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala-2.11/Graph_x.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="450" column="38" selection-start-line="450" selection-start-column="38" selection-end-line="450" selection-end-column="38" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#42#131#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala-2.11/wayObject.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala-2.11/dijkstraObj.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="82" selection-start-line="5" selection-start-column="82" selection-end-line="5" selection-end-column="82" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala-2.11/nodeObject.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1029,7 +1017,85 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala-2.11/wayObject.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Google Drive/Tesi/CarSharing_21_06/src/main/scala-2.11/WayParser.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="23" selection-end-column="110" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala-2.11/dijkstraObj.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/idea.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.sbt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/idea.vmoptions">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala-2.11/WayParser.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.apache.spark/spark-graphx_2.11/srcs/spark-graphx_2.11-1.6.1-sources.jar!/org/apache/spark/graphx/Pregel.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="156" column="0" selection-start-line="156" selection-start-column="0" selection-end-line="156" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.apache.spark/spark-graphx_2.11/srcs/spark-graphx_2.11-1.6.1-sources.jar!/org/apache/spark/graphx/GraphOps.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="361" column="6" selection-start-line="361" selection-start-column="6" selection-end-line="361" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala-2.11/Graph_x.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="292" column="81" selection-start-line="292" selection-start-column="81" selection-end-line="292" selection-end-column="81" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#42#131#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

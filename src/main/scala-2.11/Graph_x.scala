@@ -7,7 +7,6 @@ import java.nio.file.{Files, Paths}
 
 import io.plasmap.parser.OsmParser
 import org.apache.log4j.{Level, Logger}
-import org.apache.spark.graphx.PartitionStrategy.EdgePartition2D
 import org.apache.spark.graphx._
 import org.apache.spark.rdd.RDD
 import org.apache.spark.{SparkConf, SparkContext}
@@ -35,24 +34,16 @@ object Graph_x {
     val _listObjNodeWithLatAndLon = parserNode(pathString,_listVertex) //Contain (idNode:Long,Latitude:Long,Longitude:Long) List of nodeObject
 
 
-
-    //println(_listVertex)
-    //println(_listEdge)
-
-
-
     //Load Shortest Path From File
     val _dijkstraObjList = scala.collection.mutable.MutableList[_dijkstraObj]()
     getPathDijkstraFromFile().foreach(objDjk=>{_dijkstraObjList.+=(objDjk)})
 
-//    _dijkstraObjList.map(a=>{println(a.idSrc,a.idDst,a.weight) ; a})
-
-
+    println("Nodi Calcolati:" + _dijkstraObjList.map(a=>a.idSrc).distinct.size)
 
 
 
    val config = new SparkConf()
-   config.setMaster("local[2]")
+   config.setMaster("local")
    config.setAppName("Graph_x")
    val sc = new SparkContext(config)
 
@@ -62,39 +53,39 @@ object Graph_x {
 
     val graph:Graph[VertexId, Long] = Graph(nodesRDD, relRDD)
 
-    graph.partitionBy(EdgePartition2D)
     println("NumVertex: " + graph.numVertices + " NumEdge: " + graph.numEdges )
 
-   //  println("Distance: "  + distanceFrom(37.6215537 , 15.1624967 , 37.6135414 , 15.1658417))
-   val random = scala.util.Random
-// ogni volta che lo avvio mi calcola un dijkstra da un vertex random
-   //  val src = _listVertex.toList(random.nextInt(_listVertex.size))._1
-    // se voglio evitare il dijkstra
-     val src = 14
-    val dst = 100
+    for( a <-0 to 5000) {
+      println("Dijkstra n° " + a)
+      val random = scala.util.Random
 
-   //Eseguire Dijkstra solo se non esiste già il cammino minimo nella lista di path
- if(_dijkstraObjList.map(djkObj=>djkObj.idSrc).distinct.filter(_==src).toList.isEmpty) {
-      dijkstra(sc,graph,src,dst).foreach(objDjk => _dijkstraObjList.+=(objDjk))
-      saveDijkstraPathFile(_dijkstraObjList.toList) //save new list path
+      // se voglio evitare il dijkstra
+      // val src = 14
+      // ogni volta che lo avvio mi calcola un dijkstra da un vertex random
+     val src = _listVertex.toList(random.nextInt(_listVertex.size))._1
+     //   val src = 664
+      val dst = 100
+
+      //Eseguire Dijkstra solo se non esiste già il cammino minimo nella lista di path
+      if (_dijkstraObjList.map(djkObj => djkObj.idSrc).distinct.filter(_ == src).toList.isEmpty) {
+        dijkstra(sc, graph, src, dst).foreach(objDjk => _dijkstraObjList.+=(objDjk))
+        saveDijkstraPathFile(_dijkstraObjList.toList) //save new list path
+      }
+
+
+
     }
 
   val randomTrips =  createRandomTrip(1000,_listObjNodeWithLatAndLon,_dijkstraObjList.toList,_listEdge,sc,graph)
-
-    //randomTrips.map(a=>{ println("Trip S: "+ a.nodeStart + " D: " + a.nodeDest + " Stime: " +a.startTime + " Atime: " +a.arrivalTime + " path: " + a.pathTimed) ; a})
-
-
-    createShareabilityNetwork(randomTrips,5,10,_listEdge,_dijkstraObjList.toList)
+ // val Shareability =  createShareabilityNetwork(randomTrips,5,10,_listEdge,_dijkstraObjList.toList)
 
 
+    println("Dijkstra: " +_dijkstraObjList.size)
+
+  sc.stop()
 
 
-    // maxMatchingWeighted(_listVertex,_listEdge)
-
-
-
-
-sc.stop()
+    //  println("Distance: "  + distanceFrom(37.6215537 , 15.1624967 , 37.6135414 , 15.1658417))
   }
 
 
@@ -295,16 +286,17 @@ _listObjWay.foreach({
         if (id == srcId) (0.0, List[VertexId](srcId))
          else (Double.PositiveInfinity, List[VertexId]()))
 
-
+               initialGraph.unpersist(true)
     // initialize all vertices except the root to have distance infinity
     val sourceId: VertexId = srcId
-
-    val sssp = initialGraph.pregel((Double.PositiveInfinity, List[VertexId]()), Int.MaxValue, EdgeDirection.Out)(
+//Int.MaxValue
+    val sssp = initialGraph.pregel((Double.PositiveInfinity, List[VertexId]()), 20000, EdgeDirection.Out)(
       // vertex program
       (id, dist, newDist) => if (dist._1 < newDist._1) dist else newDist,
 
       // send message
       triplet => {
+     //   println("src: " + triplet.srcId)
         if (triplet.srcAttr._1 < triplet.dstAttr._1 - triplet.attr ) {
           Iterator((triplet.dstId, (triplet.srcAttr._1 + triplet.attr , triplet.srcAttr._2 :+ triplet.dstId)))
         } else {
@@ -314,6 +306,7 @@ _listObjWay.foreach({
 
       // merge message
       (a, b) => if (a._1 < b._1) a else b)
+
 
 
 
@@ -518,6 +511,7 @@ if(path.size > 1) {
 
   def createShareabilityNetwork(trips:List[_objTrip] , waithTime: Long , deltaTime: Long , listEdge: List[Edge[(Long)]] , _dijkstraList:List[_dijkstraObj]) : Unit = {
 
+    println("Start Creating Shareability ...")
     val _nodeShareability = scala.collection.mutable.MutableList[(Long,Long)]()
     val _edgeShareability = scala.collection.mutable.MutableList[Edge[(Long)]]()
     trips.foreach(
@@ -610,7 +604,7 @@ if(path.size > 1) {
           })
 
       })
-
+    println("Stop Creating Shareability ...")
    val _vertexDistinct = _nodeShareability.distinct
     maxMatchingWeighted(_vertexDistinct.toList,_edgeShareability.toList)
 
